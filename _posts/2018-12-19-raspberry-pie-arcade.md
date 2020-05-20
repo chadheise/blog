@@ -3,7 +3,7 @@ layout: post
 title:  "Raspberry Pie Arcade"
 date:   2018-12-19
 ---
-![arcade.jpeg](../assets/img/arcade.jpeg)
+![arcade.jpeg]({{site.baseurl}}/assets/img/arcade.jpeg)
 Here are some resources for building an arcade using a Raspberry Pi.
 
 * [RetroPie](https://retropie.org.uk/)
@@ -15,3 +15,4 @@ Here are some resources for building an arcade using a Raspberry Pi.
     * [Video](https://youtu.be/nttu_5-zJHo)
 * [PiGrrl portable arcade](https://www.adafruit.com/product/3014)
 * [Arcade Artwork](http://www.arcadeartwork.org/)
+{{site.baseurl}}/assets

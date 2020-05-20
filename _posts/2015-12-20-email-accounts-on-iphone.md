@@ -13,34 +13,34 @@ In order to get things working on the iPhone so that email sent from my iPhone a
 
 1. Open your iPhone settings
 
-    <img src="../assets/img/1settings.png" alt="settings" title="iPhone Settings" width="250" />
+    <img src="{{site.baseurl}}/assets/img/1settings.png" alt="settings" title="iPhone Settings" width="250" />
 2. Scroll and select "Mail, Contacts and Calendars"
 
-    <img src="../assets/img/2mailContactsCalendars.png" alt="mailContactsCalendars" title="Mail, Contacts and Calendars" width="250" />
+    <img src="{{site.baseurl}}/assets/img/2mailContactsCalendars.png" alt="mailContactsCalendars" title="Mail, Contacts and Calendars" width="250" />
 3. Choose "Add Account"
 
-    <img src="../assets/img/3addAccount.png" alt="addAccount" title="Add Account" width="250" />
+    <img src="{{site.baseurl}}/assets/img/3addAccount.png" alt="addAccount" title="Add Account" width="250" />
 4. Select "Other" account. Using the "Google" option does not allow for it to be set up properly using the email alias
 
-    <img src="../assets/img/4googleAccount.png" alt="googleAccount" title="Google Account" width="250" />
+    <img src="{{site.baseurl}}/assets/img/4googleAccount.png" alt="googleAccount" title="Google Account" width="250" />
 5. Select "Add Mail Account"
 
-    <img src="../assets/img/5addMailAccount.png" alt="addMailAccount" title="Add Mail Account" width="250" />
+    <img src="{{site.baseurl}}/assets/img/5addMailAccount.png" alt="addMailAccount" title="Add Mail Account" width="250" />
 6. Fill in your account information. Use your custom domain email address and your Gmail password. Choose a Name and Description as desirable.
 
-    <img src="../assets/img/6accountInfo.png" alt="accountInfo" title="Account Info" width="250" />
+    <img src="{{site.baseurl}}/assets/img/6accountInfo.png" alt="accountInfo" title="Account Info" width="250" />
 7. On the next screen, scroll down to the "incoming mail server".<br/>
     **Host Name:** imap.gmail.com<br/>
     **User Name:** your Gmail address (not your custom domain email)<br/>
     **Password:** your Gmail password<br/>
     
-    <img src="../assets/img/7incomingMail.png" alt="incomingMail" title="Incoming Mail Server" width="250" />
+    <img src="{{site.baseurl}}/assets/img/7incomingMail.png" alt="incomingMail" title="Incoming Mail Server" width="250" />
 8. Scroll to "outgoing mail server"<br/>
     **Host Name:** smtp.gmail.com<br/>
     **User Name:** your Gmail address (not your custom domain email)<br/>
     **Password:** your Gmail password
 
-    <img src="../assets/img/8outgoingMail.png" alt="outgoingMail" title="Outgoing Mail Server" width="250" />
+    <img src="{{site.baseurl}}/assets/img/8outgoingMail.png" alt="outgoingMail" title="Outgoing Mail Server" width="250" />
 
 # Other Settings
 
@@ -54,7 +54,7 @@ If you are using Google's 2 factor authentication, then you will need to set up 
 
 I prefer not to actually delete "deleted" messages but instead just archive them in Gmail. To do this, click "Advanced" when viewing your account, then set the following settings.
 
-<img src="../assets/img/archiveDeletedMessages.png" alt="archiveDeletedMessages" title="Archive Deleted Items" width="250" />
+<img src="{{site.baseurl}}/assets/img/archiveDeletedMessages.png" alt="archiveDeletedMessages" title="Archive Deleted Items" width="250" />
 
 ## Calendars, Contacts, and more
 
