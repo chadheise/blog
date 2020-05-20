@@ -3,7 +3,7 @@ layout: post
 title:  "Synchronizing MacDive with DiveLog and Dive Computer"
 date:   2015-12-01
 ---
-<img src="/assets/img/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
+<img src="../assets/img/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
 
 # Overview
 

@@ -3,7 +3,7 @@ layout: post
 title:  "Raspberry Pie Arcade"
 date:   2018-12-19
 ---
-![arcade.jpeg](/assets/img/arcade.jpeg)
+![arcade.jpeg](../assets/img/arcade.jpeg)
 Here are some resources for building an arcade using a Raspberry Pi.
 
 * [RetroPie](https://retropie.org.uk/)
