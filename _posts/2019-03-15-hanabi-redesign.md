@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Hanabi Redesign"
 date:   2019-03-15
+permalink: "/hanabi-redesign"
 ---
 ![hanabiTitle.jpg]({{site.baseurl}}/assets/img/hanabiTitle.jpg)
 

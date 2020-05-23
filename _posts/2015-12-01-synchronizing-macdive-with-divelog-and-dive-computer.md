@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Synchronizing MacDive with DiveLog and Dive Computer"
 date:   2015-12-01
+permalink: "/synchronizing-mac-dive"
 ---
 <img src="{{site.baseurl}}/assets/img/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
 

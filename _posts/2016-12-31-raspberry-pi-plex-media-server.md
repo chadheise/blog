@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Raspberry Pi Plex Media Server"
 date:   2016-12-31
+permalink: "/raspberry-pi-plex-media-server"
 ---
 There are many useful posts about how to set up a [Plex](https://www.plex.tv/) Media Server on a [Raspberry Pi](https://www.raspberrypi.org/) but I wanted to share what I found most useful and any "gotchas" I found along the way.
 

@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Raspberry Pie Arcade"
 date:   2018-12-19
+permalink: "/raspberry-pi-arcade"
 ---
 ![arcade.jpeg]({{site.baseurl}}/assets/img/arcade.jpeg)
 Here are some resources for building an arcade using a Raspberry Pi.

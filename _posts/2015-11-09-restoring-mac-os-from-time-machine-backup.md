@@ -1,7 +1,7 @@
 ---
-layout: post
-title:  "Restoring Mac OS from Time Machine Backup"
-date:   2015-11-09
+title: "Restoring Mac OS from Time Machine Backup"
+date:	2015-11-09
+permalink: "/restoring-mac-from-time-machine-backup"
 ---
 # Overview
 

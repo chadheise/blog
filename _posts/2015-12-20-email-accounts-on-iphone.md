@@ -1,7 +1,7 @@
 ---
-layout: post
 title:  "Email Accounts on iPhone"
 date:   2015-12-20
+permalink: "/email-accounts-on-iphone"
 ---
 # Overview
 
