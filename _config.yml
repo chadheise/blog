@@ -28,7 +28,7 @@ url: "https://chadheise.github.io" # the base hostname & protocol for your site,
 github_username:  chadheise
 
 # Build settings
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
@@ -47,10 +47,6 @@ defaults:
       path: ""
     values:
       layout: "default" 
-  - scope:
-      path: "pages"
-    values:
-      layout: "page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
