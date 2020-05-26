@@ -1,4 +1,5 @@
 ---
+title: Chad's Blog
 ---
 ## Welcome to my blog!
 
