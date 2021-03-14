@@ -76,6 +76,20 @@ I frequently referenced these pages to ensure I was naming my video files correc
 
 Many of the videos (esp BluRays) were encoded with H.264 Level 4.1 instead of Level 4. Changing the setting on the Plex client to use 41 instead of 40 allowed for direct playback and prevented problems due to encoding.
 
+## Live TV not working
+
+* See [this guide](https://forums.plex.tv/t/the-guide-is-empty/575117/5)
+
+```
+service plexmediaserver stop
+
+sudo rm /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Cache/Http/tv.plex.providers.epg.xmltv
+
+service plexmediaserver start
+```
+
+On plex client (FireTV app), delete cache, delete data and restart
+
 ## Video Buffering
 
 [https://support.plex.tv/hc/en-us/articles/201575036](https://support.plex.tv/hc/en-us/articles/201575036)
