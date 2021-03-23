@@ -8,7 +8,7 @@ category: "woodworking"
 ## Supplies
 * 1/4" mohagany plywood
 * Wood glue
-* Spray Lacquer
+* Spray Lacquer - Deft Clear Wood Finish, Satin Clear
 
 ## Pictures
 ### Silverware
