@@ -4,7 +4,7 @@ date:   2021-01-21
 permalink: "/woodworking/cocktail_shelf"
 category: "woodworking"
 ---
-![IMG_7847]({{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8741.jpg)
+![IMG_8741]({{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8741.jpg)
 
 ## Designs
 * [SketchUp]({{site.baseurl}}/assets/files/woodworking/cocktailShelf.skp)
