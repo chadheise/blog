@@ -66,8 +66,8 @@ To rip BluRays you need the ability to decode them. Thankfully, there is some us
 
 I frequently referenced these pages to ensure I was naming my video files correctly so that Plex would not have any issues gathering the correct metadata (movie posters, etc)
 
-* [Movie Naming](https://support.plex.tv/hc/en-us/articles/200381023-Naming-Movie-files)
-* [TV Series Naming](https://support.plex.tv/hc/en-us/articles/200220687-Naming-Series-Season-Based-TV-Shows)
+* [Movie Naming](https://support.plex.tv/articles/naming-and-organizing-your-movie-media-files/)
+* [TV Series Naming](https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/)
 * [IMDB](http://www.imdb.com/) - Useful for looking up information such as the year made about movies and TV shows
 
 # Troubleshooting
