@@ -1,5 +1,5 @@
 ---
-title:  "Raspberry Pie Arcade"
+title:  "Raspberry Pi Arcade"
 date:   2018-12-19
 permalink: "/raspberry-pi-arcade"
 ---
