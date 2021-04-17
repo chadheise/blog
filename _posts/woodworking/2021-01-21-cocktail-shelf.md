@@ -17,18 +17,24 @@ category: "woodworking"
 * Minwax semi-gloss polyurethane
 
 ## Pictures
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8715.jpg" alt="cocktailShelf" width="375"/>
-</div>
+<div style="display:flex;flex-direction:column;align-content:space-between;" >
 
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8717.jpg" alt="cocktailShelf" width="375"/>
-</div>
+	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8715.jpg" alt="cocktailShelf"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8717.jpg" alt="cocktailShelf"/>
+		</div>
+	</div>
 
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8732.jpg" alt="cocktailShelf" width="375"/>
-</div>
+	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8732.jpg" alt="cocktailShelf"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8733.jpg" alt="cocktailShelf"/>
+		</div>
+	</div>
 
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8733.jpg" alt="cocktailShelf" width="375"/>
 </div>
