@@ -18,16 +18,26 @@ category: "woodworking"
 * [SketchUp]({{site.baseurl}}/assets/files/woodworking/silverwareDrawer.skp)
 
 ### Pictures
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7863.jpg" alt="cornhole" width="250"/>
-</div>
 
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7866.jpg" alt="cornhole" width="250"/>
-</div>
+<div style="display:flex;flex-direction:column;align-content:space-between;" >
 
-<div style="float:left;display:block;margin-right:16px;padding-right:8px;" >
-<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7868.jpg" alt="cornhole" width="250"/>
+	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7863.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7866.jpg" alt="drawer_organizer"/>
+		</div>
+	</div>
+
+	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7868.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+		</div>
+	</div>
+
 </div>
 
 ## Kitchen Utensils
