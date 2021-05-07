@@ -45,3 +45,51 @@ category: "woodworking"
 
 ### Designs
 * [PDF]({{site.baseurl}}/assets/files/woodworking/kitchenDrawer.pdf)
+
+## Bathroom Drawer
+<div style="display:flex;flex-direction:column;align-content:space-between;" >
+
+	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9100.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+		</div>
+	</div>
+	
+		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9101.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9102.jpg" alt="drawer_organizer"/>
+		</div>
+	</div>
+	
+		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9106.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9120.jpg" alt="drawer_organizer"/>
+		</div>
+	</div>
+	
+		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9119.jpg" alt="drawer_organizer"/>
+		</div>
+	</div>
+	
+		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9098.jpg" alt="drawer_organizer"/>
+		</div>
+		<div style="flex:1;margin:8px;">
+			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9121.jpg" alt="drawer_organizer"/>
+		</div>
+	</div>
+
+
+
+</div>
