@@ -7,7 +7,7 @@ category: "woodworking"
 ![IMG_9570]({{site.baseurl}}/assets/img/woodworking/cutting_boards/IMG_9570.jpg)
 
 ## Designs
-* [SketchUp]({{site.baseurl}}/assets/files/woodworking/shotGlassDisplay.skp)
+* [PDF]({{site.baseurl}}/assets/files/woodworking/cuttingBoard.pdf)
 * [Cutting board designer](https://ericu.github.io/CBDJS/cb.html)
 
 ## Supplies
