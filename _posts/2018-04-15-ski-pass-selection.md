@@ -14,3 +14,5 @@ As a snowboarder and recent skier I enjoy hitting the slopes every year. Unfortu
 <iframe src="https://www.google.com/maps/d/embed?mid=1ShDkaEGpA7jqEaUjKHkhWTRbHN_pIT1r" width="640" height="480" />
 
 \* This map may get out of date as the passes change overtime. Please check the various pass websites for the official list of resorts and any restrictions that may apply.
+
+Another, more complete list of ski resorts and their associated passes can be found in [this post](https://www.stormskiing.com/p/here-are-the-prices-of-every-ski)
