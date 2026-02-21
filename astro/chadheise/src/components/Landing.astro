@@ -59,9 +59,8 @@ import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
 
   <nav class="nav">
     <a href="#about" class="nav-link">About</a>
-    <a href="#software" class="nav-link">Software</a>
-    <a href="#woodworking" class="nav-link">Woodworking</a>
     <a href="#projects" class="nav-link">Projects</a>
+    <a href="#blog" class="nav-link">Blog</a>
     <a href="#career" class="nav-link">Career</a>
   </nav>
 
@@ -74,16 +73,9 @@ import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
       </p>
     </section>
 
-    <section id="software" class="section">
-      <h2>Software</h2>
-      <p>
-        Check out my <a
-          href="https://github.com/chadheise"
-          target="_blank"
-          rel="noopener noreferrer">GitHub</a
-        > for full list of projects I've worked on.
-      </p>
-      <div class="featured-app">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <a href="https://github.com/chadheise/pace-calc" target="_blank" rel="noopener noreferrer" class="featured-app">
         <img src={paceCalcIcon.src} alt="Quick Pace Calc" class="app-icon" />
         <div class="app-info">
           <h3 class="app-name">Quick Pace Calc</h3>
@@ -92,22 +84,14 @@ import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
             distance. Perfect for estimating race times based on previous runs.
           </p>
         </div>
-      </div>
+      </a>
     </section>
 
-    <section id="woodworking" class="section">
-      <h2>Woodworking</h2>
+    <section id="blog" class="section">
+      <h2>Blog</h2>
       <p>
-        In my spare time, I enjoy woodworking and 3D printing projects. Check
-        out my Thingiverse profile for designs and creations.
-      </p>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>
-        A collection of my work and side projects across software and making.
-        More details coming soon.
+        I write about software development, maker projects, and other topics of
+        interest. Check back soon for new posts and articles.
       </p>
     </section>
 
@@ -249,6 +233,13 @@ import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
     padding: 1rem;
     border-radius: 8px;
     background-color: #E5DDD4;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+  }
+
+  .featured-app:hover {
+    background-color: #DDD5CC;
   }
 
   .app-icon {
