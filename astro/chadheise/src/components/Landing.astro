@@ -1,18 +1,67 @@
 ---
-
+import notreDameLogo from "../assets/notreDameLogo.svg";
+import amazonLogo from "../assets/amazonLogo.svg";
+import geHealthcareLogo from "../assets/geHealthcareLogo.svg";
+import metaLogo from "../assets/metaLogo.svg";
 ---
 
 <div class="landing">
   <header class="header">
     <h1 class="name">Chad Heise</h1>
     <p class="tagline">Software Engineer & Maker</p>
+    <ul class="contact-links">
+      <li>
+        <a
+          href="https://github.com/chadheise"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="icon-link"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              fill="#0066cc"></path>
+          </svg>
+          <span class="icon-label">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.thingiverse.com/fivefives/designs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Thingiverse"
+          class="icon-link"
+        >
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M30.9681 0H1.02583C0.458608 0 0 0.458695 0 1.02603V30.974C0 31.5413 0.458608 32 1.02583 32H11.4531C12.0204 32 12.479 31.5413 12.479 30.974V13.0668C12.479 12.928 12.3643 12.8133 12.2255 12.8133H4.24213C4.10334 12.8133 3.98869 12.6986 3.98869 12.5598V6.02942C3.98869 5.89061 4.10334 5.77593 4.24213 5.77593H27.7518C27.8906 5.77593 28.0053 5.89061 28.0053 6.02942V12.5598C28.0053 12.6986 27.8906 12.8133 27.7518 12.8133H19.7745C19.6357 12.8133 19.521 12.928 19.521 13.0668V30.974C19.521 31.5413 19.9796 32 20.5469 32H30.9742C31.5414 32 32 31.5413 32 30.974V1.02603C32 0.458695 31.5414 0 30.9742 0H30.9681Z"
+              fill="#0066cc"></path>
+          </svg>
+          <span class="icon-label">Thingiverse</span>
+        </a>
+      </li>
+    </ul>
   </header>
 
   <nav class="nav">
     <a href="#about" class="nav-link">About</a>
-    <a href="#blog" class="nav-link">Blog</a>
+    <a href="#software" class="nav-link">Software</a>
+    <a href="#woodworking" class="nav-link">Woodworking</a>
     <a href="#projects" class="nav-link">Projects</a>
-    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#career" class="nav-link">Career</a>
   </nav>
 
   <main class="content">
@@ -24,42 +73,68 @@
       </p>
     </section>
 
-    <section id="blog" class="section">
-      <h2>Blog</h2>
+    <section id="software" class="section">
+      <h2>Software</h2>
       <p>
-        Coming soon. Check back for articles on software development, web
-        technologies, and more.
+        I enjoy building software and contributing to the development community.
+        Check out my GitHub for code samples and projects I'm working on.
+      </p>
+    </section>
+
+    <section id="woodworking" class="section">
+      <h2>Woodworking</h2>
+      <p>
+        In my spare time, I enjoy woodworking and 3D printing projects. Check
+        out my Thingiverse profile for designs and creations.
       </p>
     </section>
 
     <section id="projects" class="section">
       <h2>Projects</h2>
       <p>
-        A collection of my work and side projects. More details coming soon.
+        A collection of my work and side projects across software and making.
+        More details coming soon.
       </p>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Get in Touch</h2>
-      <p>
-        Interested in working together or just want to say hello? Find me on:
-      </p>
-      <ul class="contact-links">
+    <section id="career" class="section">
+      <h2>Career</h2>
+      <ul class="career-list">
         <li>
-          <a href="https://github.com/chadheise" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="icon-link">
-            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" fill="#0066cc"/>
-            </svg>
-            <span class="icon-label">GitHub</span>
-          </a>
+          <img
+            src={notreDameLogo.src}
+            alt="University of Notre Dame"
+            class="company-icon"
+          />
+          <div class="career-info">
+            <span class="career-date">2012</span>
+            <span class="career-role">B.S. in Computer Science</span>
+          </div>
         </li>
         <li>
-          <a href="https://www.thingiverse.com/fivefives/designs" target="_blank" rel="noopener noreferrer" aria-label="Thingiverse" class="icon-link">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M30.9681 0H1.02583C0.458608 0 0 0.458695 0 1.02603V30.974C0 31.5413 0.458608 32 1.02583 32H11.4531C12.0204 32 12.479 31.5413 12.479 30.974V13.0668C12.479 12.928 12.3643 12.8133 12.2255 12.8133H4.24213C4.10334 12.8133 3.98869 12.6986 3.98869 12.5598V6.02942C3.98869 5.89061 4.10334 5.77593 4.24213 5.77593H27.7518C27.8906 5.77593 28.0053 5.89061 28.0053 6.02942V12.5598C28.0053 12.6986 27.8906 12.8133 27.7518 12.8133H19.7745C19.6357 12.8133 19.521 12.928 19.521 13.0668V30.974C19.521 31.5413 19.9796 32 20.5469 32H30.9742C31.5414 32 32 31.5413 32 30.974V1.02603C32 0.458695 31.5414 0 30.9742 0H30.9681Z" fill="#0066cc"/>
-            </svg>
-            <span class="icon-label">Thingiverse</span>
-          </a>
+          <img src={amazonLogo.src} alt="Amazon" class="company-icon" />
+          <div class="career-info">
+            <span class="career-date">2012-2015</span>
+            <span class="career-role">Software Engineer</span>
+          </div>
+        </li>
+        <li>
+          <img
+            src={geHealthcareLogo.src}
+            alt="GE Healthcare"
+            class="company-icon"
+          />
+          <div class="career-info">
+            <span class="career-date">2015-2017</span>
+            <span class="career-role">Software Engineer</span>
+          </div>
+        </li>
+        <li>
+          <img src={metaLogo.src} alt="Meta" class="company-icon" />
+          <div class="career-info">
+            <span class="career-date">2017-Present</span>
+            <span class="career-role">Software Engineer</span>
+          </div>
         </li>
       </ul>
     </section>
@@ -97,6 +172,7 @@
     font-size: 1.25rem;
     color: #666;
     font-weight: 400;
+    margin-bottom: 1.5rem;
   }
 
   .nav {
@@ -140,11 +216,51 @@
     margin-bottom: 1rem;
   }
 
+  .career-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .career-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+  }
+
+  .career-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.075rem;
+  }
+
+  .career-date {
+    font-size: 0.875rem;
+    color: #999;
+    font-weight: 400;
+  }
+
+  .career-role {
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  .company-icon {
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    object-fit: contain;
+  }
+
   .contact-links {
     list-style: none;
     display: flex;
     gap: 2rem;
-    margin-top: 1rem;
+    margin: 0;
+    padding: 0;
     justify-content: center;
   }
 
