@@ -3,6 +3,7 @@ import notreDameLogo from "../assets/notreDameLogo.svg";
 import amazonLogo from "../assets/amazonLogo.svg";
 import geHealthcareLogo from "../assets/geHealthcareLogo.svg";
 import metaLogo from "../assets/metaLogo.svg";
+import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
 ---
 
 <div class="landing">
@@ -76,9 +77,22 @@ import metaLogo from "../assets/metaLogo.svg";
     <section id="software" class="section">
       <h2>Software</h2>
       <p>
-        I enjoy building software and contributing to the development community.
-        Check out my GitHub for code samples and projects I'm working on.
+        Check out my <a
+          href="https://github.com/chadheise"
+          target="_blank"
+          rel="noopener noreferrer">GitHub</a
+        > for full list of projects I've worked on.
       </p>
+      <div class="featured-app">
+        <img src={paceCalcIcon.src} alt="Quick Pace Calc" class="app-icon" />
+        <div class="app-info">
+          <h3 class="app-name">Quick Pace Calc</h3>
+          <p class="app-description">
+            An iOS app for runners to quickly calculate pace, speed, and
+            distance. Perfect for estimating race times based on previous runs.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="woodworking" class="section">
@@ -214,6 +228,52 @@ import metaLogo from "../assets/metaLogo.svg";
     color: #444;
     line-height: 1.8;
     margin-bottom: 1rem;
+  }
+
+  .section a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .section a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+  }
+
+  .featured-app {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .app-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 12px;
+  }
+
+  .app-info {
+    flex: 1;
+  }
+
+  .app-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-description {
+    font-size: 0.925rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
   }
 
   .career-list {
