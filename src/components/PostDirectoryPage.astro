@@ -80,24 +80,28 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     const filterEl = document.getElementById("filter-section");
     if (filterEl) {
       let lastScrollY = window.scrollY;
-      window.addEventListener("scroll", () => {
-        // Only apply on mobile breakpoint
-        if (window.innerWidth > 600) return;
-        const currentScrollY = window.scrollY;
-        const maxScroll =
-          document.documentElement.scrollHeight - window.innerHeight;
-        const upDelta = lastScrollY - currentScrollY;
-        if (currentScrollY > lastScrollY && currentScrollY > 40) {
-          filterEl.classList.add("filter-hidden");
-        } else if (upDelta >= 10 && lastScrollY <= maxScroll + 1) {
-          // Require at least 10px of upward movement before showing.
-          // This ignores the small oscillations from the bottom bounce (typically 1-5px),
-          // while still responding naturally to intentional upward scrolling.
-          // Also guard against overscroll bounce where lastScrollY exceeded maxScroll.
-          filterEl.classList.remove("filter-hidden");
-        }
-        lastScrollY = currentScrollY;
-      }, { passive: true });
+      window.addEventListener(
+        "scroll",
+        () => {
+          // Only apply on mobile breakpoint
+          if (window.innerWidth > 600) return;
+          const currentScrollY = window.scrollY;
+          const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const upDelta = lastScrollY - currentScrollY;
+          if (currentScrollY > lastScrollY && currentScrollY > 40) {
+            filterEl.classList.add("filter-hidden");
+          } else if (upDelta >= 10 && lastScrollY <= maxScroll + 1) {
+            // Require at least 10px of upward movement before showing.
+            // This ignores the small oscillations from the bottom bounce (typically 1-5px),
+            // while still responding naturally to intentional upward scrolling.
+            // Also guard against overscroll bounce where lastScrollY exceeded maxScroll.
+            filterEl.classList.remove("filter-hidden");
+          }
+          lastScrollY = currentScrollY;
+        },
+        { passive: true },
+      );
     }
 
     function updatePostVisibility() {
@@ -175,6 +179,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
   .directory-title {
     font-size: 2rem;
     color: var(--color-accent);
+    margin-top: 0.5rem;
     margin-bottom: 0;
   }
 

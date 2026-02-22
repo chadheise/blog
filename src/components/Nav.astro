@@ -82,13 +82,11 @@ const { backLink } = Astro.props;
       )
     }
     <div class="nav-links">
-      <a href="/#about" class="nav-link">About</a>
       <a href="/projects" class="nav-link">Projects</a>
       <a href="/blog" class="nav-link">Blog</a>
       <a href="/#career" class="nav-link">Career</a>
     </div>
   </div>
-
 </nav>
 
 <style>
@@ -202,13 +200,28 @@ const { backLink } = Astro.props;
   }
 
   @media (max-width: 600px) {
+    .site-nav {
+      padding: 0.5rem 0;
+      margin-bottom: 1rem;
+    }
+
+    .nav-secondary-row {
+      margin-top: 0.15rem;
+    }
+
     .nav-links {
       gap: 1rem;
     }
 
-    .nav-secondary-row {
-      row-gap: 0.25rem;
+    .site-name,
+    .nav-link,
+    .back-link {
+      min-height: unset;
+    }
+
+    .social-link {
+      min-height: unset;
+      min-width: unset;
     }
   }
 </style>
-
