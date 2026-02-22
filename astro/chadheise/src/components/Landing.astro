@@ -29,21 +29,6 @@ import Nav from "./Nav.astro";
 
     <section id="projects" class="section">
       <h2>Projects</h2>
-      <a
-        href="https://github.com/chadheise/pace-calc"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="featured-app"
-      >
-        <img src={paceCalcIcon.src} alt="Quick Pace Calc" class="app-icon" />
-        <div class="app-info">
-          <h3 class="app-name">Quick Pace Calc</h3>
-          <p class="app-description">
-            An iOS app for runners to quickly calculate pace, speed, and
-            distance. Perfect for estimating race times based on previous runs.
-          </p>
-        </div>
-      </a>
       <ProjectList limit={3} />
     </section>
 
@@ -272,6 +257,5 @@ import Nav from "./Nav.astro";
     .section h2 {
       font-size: 1.5rem;
     }
-
   }
 </style>

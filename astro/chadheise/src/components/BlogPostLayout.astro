@@ -1,30 +1,31 @@
 ---
-import { formatDate } from '../lib/blog';
-import Nav from './Nav.astro';
+import { formatDate } from "../lib/blog";
+import Nav from "./Nav.astro";
 
 interface Props {
   title: string;
   date: string;
+  backLink?: { href: string; label: string };
 }
 
-const { title, date } = Astro.props as Props;
+const { title, date, backLink } = Astro.props as Props;
 ---
 
 <div class="blog-post-page">
-  <Nav backLink={{ href: '/blog', label: 'Blog' }} />
+  <Nav backLink={backLink} />
   <article class="blog-post">
-  <header class="blog-post-header">
-    <h1 class="blog-post-title">{title}</h1>
-    <p class="blog-post-date">{formatDate(date)}</p>
-  </header>
+    <header class="blog-post-header">
+      <h1 class="blog-post-title">{title}</h1>
+      <p class="blog-post-date">{formatDate(date)}</p>
+    </header>
 
-  <div class="blog-post-content">
-    <slot />
-  </div>
+    <div class="blog-post-content">
+      <slot />
+    </div>
 
-  <footer class="blog-post-footer">
-    <a href="/blog" class="back-link">← Back to Blog</a>
-  </footer>
+    <footer class="blog-post-footer">
+      <a href="/blog" class="back-link">← Back to Blog</a>
+    </footer>
   </article>
 </div>
 
@@ -46,20 +47,20 @@ const { title, date } = Astro.props as Props;
 
   .blog-post-header {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #DDD8CF;
+    border-bottom: 1px solid #ddd8cf;
     padding-bottom: 1.5rem;
   }
 
   .blog-post-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #62664F;
+    color: #62664f;
     margin: 0 0 0.5rem 0;
   }
 
   .blog-post-date {
     font-size: 0.95rem;
-    color: #5A738F;
+    color: #5a738f;
     font-weight: 400;
     margin: 0;
   }
@@ -76,7 +77,7 @@ const { title, date } = Astro.props as Props;
   .blog-post-content :global(h4),
   .blog-post-content :global(h5),
   .blog-post-content :global(h6) {
-    color: #62664F;
+    color: #62664f;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
@@ -95,19 +96,19 @@ const { title, date } = Astro.props as Props;
   }
 
   .blog-post-content :global(p) {
-    color: #3E3E3E;
+    color: #3e3e3e;
     line-height: 1.8;
     margin-bottom: 1rem;
   }
 
   .blog-post-content :global(a) {
-    color: #3E8CE6;
+    color: #3e8ce6;
     text-decoration: none;
     transition: color 0.2s ease;
   }
 
   .blog-post-content :global(a:hover) {
-    color: #2A5FA8;
+    color: #2a5fa8;
     text-decoration: underline;
   }
 
@@ -120,7 +121,7 @@ const { title, date } = Astro.props as Props;
 
   .blog-post-content :global(ul),
   .blog-post-content :global(ol) {
-    color: #3E3E3E;
+    color: #3e3e3e;
     line-height: 1.8;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
@@ -131,25 +132,26 @@ const { title, date } = Astro.props as Props;
   }
 
   .blog-post-content :global(blockquote) {
-    border-left: 4px solid #3E8CE6;
+    border-left: 4px solid #3e8ce6;
     margin: 1.5rem 0;
     padding: 1rem 0 1rem 1rem;
-    color: #5A738F;
+    color: #5a738f;
     font-style: italic;
   }
 
   .blog-post-content :global(code) {
-    background-color: #62664F;
-    color: #EDE8DF;
+    background-color: #62664f;
+    color: #ede8df;
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
-    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
-      'DejaVu Sans Mono', monospace;
+    font-family:
+      ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+      "DejaVu Sans Mono", monospace;
     font-size: 0.9em;
   }
 
   .blog-post-content :global(pre) {
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
     padding: 1rem;
     border-radius: 6px;
     overflow-x: auto;
@@ -159,25 +161,25 @@ const { title, date } = Astro.props as Props;
 
   .blog-post-content :global(pre code) {
     background-color: transparent;
-    color: #EDE8DF;
+    color: #ede8df;
     padding: 0;
     border-radius: 0;
   }
 
   .blog-post-footer {
-    border-top: 1px solid #DDD8CF;
+    border-top: 1px solid #ddd8cf;
     padding-top: 1.5rem;
   }
 
   .back-link {
-    color: #3E8CE6;
+    color: #3e8ce6;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
   .back-link:hover {
-    color: #2A5FA8;
+    color: #2a5fa8;
     text-decoration: underline;
   }
 
