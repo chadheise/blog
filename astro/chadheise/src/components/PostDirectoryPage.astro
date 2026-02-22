@@ -1,6 +1,11 @@
 ---
 import Nav from "./Nav.astro";
 import PostList from "./PostList.astro";
+import Tag from "./Tag.astro";
+import {
+  parseAndSortBlogPosts,
+  parseAndSortProjectPosts,
+} from "../lib/post";
 
 interface Props {
   title: string;
@@ -8,13 +13,110 @@ interface Props {
 }
 
 const { title, directory } = Astro.props as Props;
+
+const allPosts =
+  directory === "blog"
+    ? await parseAndSortBlogPosts()
+    : await parseAndSortProjectPosts();
+
+// Collect unique tags present across all posts in this directory
+const tagSet = new Set<string>();
+for (const post of allPosts) {
+  for (const tag of post.frontmatter.tags ?? []) {
+    tagSet.add(tag);
+  }
+}
+const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
 ---
 
 <div class="directory-page">
   <Nav backLink={{ href: "/", label: "Home" }} />
   <h1 class="directory-title">{title}</h1>
+
+  <div class="filter-section">
+    <div class="filter-header">
+      <p class="filter-label">Filter by tag:</p>
+      <Tag as="button" label="All" selected={true} dataTag="__all__" />
+      <Tag as="button" label="None" selected={false} dataTag="__none__" />
+    </div>
+    <div
+      class="filter-tags"
+      id="filter-tags"
+      data-all-tags={JSON.stringify(uniqueTags.map((t) => t.toLowerCase()))}
+    >
+      {
+        uniqueTags.map((tag) => (
+          <Tag as="button" label={tag} selected={true} dataTag={tag.toLowerCase()} />
+        ))
+      }
+    </div>
+  </div>
+
   <PostList directory={directory} />
 </div>
+
+<script>
+  const filterContainer = document.getElementById("filter-tags");
+  if (filterContainer) {
+    const allTagsData: string[] = JSON.parse(
+      filterContainer.dataset.allTags || "[]",
+    );
+    const selectedTags = new Set<string>(allTagsData);
+
+    const filterSection = filterContainer.closest(".filter-section");
+    const filterButtons = (filterSection ?? filterContainer).querySelectorAll<HTMLButtonElement>("button[data-tag]");
+    const postCards =
+      document.querySelectorAll<HTMLAnchorElement>(".post-card");
+
+    function updatePostVisibility() {
+      postCards.forEach((card) => {
+        const cardTags: string[] = JSON.parse(card.dataset.tags || "[]");
+        // Posts with no tags always show; others show if any selected tag matches
+        const visible =
+          cardTags.length === 0 || cardTags.some((t) => selectedTags.has(t));
+        card.style.display = visible ? "" : "none";
+      });
+    }
+
+    function updateButtonStates() {
+      filterButtons.forEach((btn) => {
+        const tag = btn.dataset.tag;
+        let isSelected: boolean;
+        if (tag === "__all__") {
+          isSelected = allTagsData.every((t) => selectedTags.has(t));
+        } else if (tag === "__none__") {
+          isSelected = selectedTags.size === 0;
+        } else {
+          isSelected = selectedTags.has(tag!);
+        }
+        btn.classList.toggle("selected", isSelected);
+      });
+    }
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tag = btn.dataset.tag;
+        if (tag === "__all__") {
+          allTagsData.forEach((t) => selectedTags.add(t));
+        } else if (tag === "__none__") {
+          selectedTags.clear();
+        } else if (tag) {
+          if (selectedTags.has(tag)) {
+            selectedTags.delete(tag);
+          } else {
+            selectedTags.add(tag);
+          }
+        }
+        updateButtonStates();
+        updatePostVisibility();
+      });
+    });
+
+    // Set initial state
+    updateButtonStates();
+    updatePostVisibility();
+  }
+</script>
 
 <style>
   .directory-page {
@@ -29,6 +131,29 @@ const { title, directory } = Astro.props as Props;
     font-weight: 700;
     color: #e64c3e;
     margin-bottom: 0.5rem;
+  }
+
+  .filter-section {
+    margin-top: 1rem;
+  }
+
+  .filter-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .filter-label {
+    font-size: 0.75rem;
+    color: #5a738f;
+    margin: 0;
+  }
+
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   @media (max-width: 600px) {

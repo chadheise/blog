@@ -1,0 +1,54 @@
+---
+import tagsData from "../lib/tags.json";
+
+interface Props {
+  label: string;
+  selected?: boolean;
+  as?: "span" | "button";
+  dataTag?: string;
+}
+
+const { label, selected = true, as: asElement = "span", dataTag } = Astro.props as Props;
+
+const tagEmojiMap = new Map(tagsData.map((t) => [t.label.toLowerCase(), t.emoji]));
+const emoji = tagEmojiMap.get(label.toLowerCase());
+const displayText = emoji ? `${emoji} ${label}` : label;
+---
+
+{
+  asElement === "button" ? (
+    <button class:list={["tag", { selected }]} data-tag={dataTag}>
+      {displayText}
+    </button>
+  ) : (
+    <span class="tag selected">{displayText}</span>
+  )
+}
+
+<style>
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background-color: #c5c0b4;
+    color: #62664f;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    border: none;
+  }
+
+  button.tag {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+
+  button.tag:hover {
+    opacity: 0.85;
+  }
+
+  .tag.selected {
+    background-color: #62664f;
+    color: #ede8df;
+  }
+</style>

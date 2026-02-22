@@ -31,7 +31,7 @@ const viewAllLabel =
       const image = post.frontmatter.image;
       const tags = post.frontmatter.tags ?? [];
       return (
-        <a href={post.url} class="post-card">
+        <a href={post.url} class="post-card" data-tags={JSON.stringify((post.frontmatter.tags ?? []).map((t) => t.toLowerCase()))}>
           {image ? (
             <div class="post-card-grid">
               <div class="post-image-area">
