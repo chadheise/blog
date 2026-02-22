@@ -30,8 +30,9 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
 ---
 
 <div class="directory-page">
-  <Nav backLink={{ href: "/", label: "Home" }} />
-  <h1 class="directory-title">{title}</h1>
+  <div class="sticky-header">
+    <Nav backLink={{ href: "/", label: "Home" }} />
+    <h1 class="directory-title">{title}</h1>
 
   <div class="filter-section">
     <div class="filter-header">
@@ -50,6 +51,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
         ))
       }
     </div>
+  </div>
   </div>
 
   <PostList directory={directory} />
@@ -124,6 +126,20 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     margin: 0 auto;
     padding: 2rem 1.5rem;
     min-height: 100vh;
+  }
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #d8cebd;
+    padding-bottom: 1rem;
+  }
+
+  /* Nav manages its own sticky; disable it inside the sticky-header wrapper */
+  .sticky-header :global(.site-nav) {
+    position: static;
+    margin-bottom: 0;
   }
 
   .directory-title {
