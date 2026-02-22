@@ -1,0 +1,57 @@
+---
+import tagsData from "../lib/tags.json";
+
+interface Props {
+  tags?: string | string[];
+}
+
+const { tags: rawTags } = Astro.props as Props;
+
+const tagEmojiMap = new Map(
+  tagsData.map((t) => [t.label.toLowerCase(), t.emoji]),
+);
+
+let tags: string[] = [];
+if (typeof rawTags === "string") {
+  tags = rawTags
+    .split(",")
+    .map((t) => t.trim())
+    .filter(Boolean);
+} else if (Array.isArray(rawTags)) {
+  tags = rawTags;
+}
+---
+
+{
+  tags.length > 0 && (
+    <div class="tag-list">
+      {tags.map((tag) => (
+        <span class="tag">
+          {tagEmojiMap.has(tag.toLowerCase())
+            ? `${tagEmojiMap.get(tag.toLowerCase())} ${tag}`
+            : tag}
+        </span>
+      ))}
+    </div>
+  )
+}
+
+<style>
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    align-items: flex-start;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background-color: #62664f;
+    color: #ede8df;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+</style>

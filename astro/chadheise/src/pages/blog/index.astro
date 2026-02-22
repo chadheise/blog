@@ -1,12 +1,12 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PostList from '../../components/PostList.astro';
-import Nav from '../../components/Nav.astro';
+import Layout from "../../layouts/Layout.astro";
+import PostList from "../../components/PostList.astro";
+import Nav from "../../components/Nav.astro";
 ---
 
 <Layout>
   <div class="blog-index">
-    <Nav backLink={{ href: '/', label: 'Home' }} />
+    <Nav backLink={{ href: "/", label: "Home" }} />
     <h1 class="blog-index-title">Blog</h1>
     <PostList directory="blog" />
   </div>
@@ -23,7 +23,7 @@ import Nav from '../../components/Nav.astro';
   .blog-index-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #62664F;
+    color: #e64c3e;
     margin-bottom: 0.5rem;
   }
 

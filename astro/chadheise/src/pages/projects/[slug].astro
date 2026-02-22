@@ -44,6 +44,7 @@ const { frontmatter } = selectedPost;
   <BlogPostLayout
     title={frontmatter.title}
     date={frontmatter.date}
+    tags={frontmatter.tags}
     backLink={{ href: "/projects", label: "Projects" }}
   >
     <Content />

@@ -1,14 +1,16 @@
 ---
 import { formatDate } from "../lib/post";
 import Nav from "./Nav.astro";
+import TagList from "./TagList.astro";
 
 interface Props {
   title: string;
   date: string;
+  tags?: string | string[];
   backLink?: { href: string; label: string };
 }
 
-const { title, date, backLink } = Astro.props as Props;
+const { title, date, tags, backLink } = Astro.props as Props;
 ---
 
 <div class="post-page">
@@ -17,6 +19,9 @@ const { title, date, backLink } = Astro.props as Props;
     <header class="post-header">
       <h1 class="post-title">{title}</h1>
       <p class="post-date">{formatDate(date)}</p>
+      <div class="tag-container">
+        <TagList tags={tags} />
+      </div>
     </header>
 
     <div class="post-content">
@@ -232,5 +237,9 @@ const { title, date, backLink } = Astro.props as Props;
     .post-content :global(p) {
       font-size: 0.95rem;
     }
+  }
+
+  .tag-container {
+    margin-top: 0.75rem;
   }
 </style>
