@@ -57,20 +57,20 @@ const { title, date, tags, backLink } = Astro.props as Props;
 
   .post-header {
     margin-bottom: 2rem;
-    border-bottom: 1px solid #ddd8cf;
+    border-bottom: 1px solid var(--color-border);
     padding-bottom: 1.5rem;
   }
 
   .post-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #e64c3e;
+    color: var(--color-accent);
     margin: 0 0 0.5rem 0;
   }
 
   .post-date {
     font-size: 0.95rem;
-    color: #5a738f;
+    color: var(--color-text-muted);
     font-weight: 400;
     margin: 0;
   }
@@ -87,7 +87,7 @@ const { title, date, tags, backLink } = Astro.props as Props;
   .post-content :global(h4),
   .post-content :global(h5),
   .post-content :global(h6) {
-    color: #e64c3e;
+    color: var(--color-accent);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
@@ -106,19 +106,19 @@ const { title, date, tags, backLink } = Astro.props as Props;
   }
 
   .post-content :global(p) {
-    color: #3e3e3e;
+    color: var(--color-text-secondary);
     line-height: 1.8;
     margin-bottom: 1rem;
   }
 
   .post-content :global(a) {
-    color: #3e8ce6;
+    color: var(--color-link);
     text-decoration: none;
     transition: color 0.2s ease;
   }
 
   .post-content :global(a:hover) {
-    color: #2a5fa8;
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 
@@ -145,7 +145,7 @@ const { title, date, tags, backLink } = Astro.props as Props;
 
   .post-content :global(ul),
   .post-content :global(ol) {
-    color: #3e3e3e;
+    color: var(--color-text-secondary);
     line-height: 1.8;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
@@ -156,16 +156,16 @@ const { title, date, tags, backLink } = Astro.props as Props;
   }
 
   .post-content :global(blockquote) {
-    border-left: 4px solid #3e8ce6;
+    border-left: 4px solid var(--color-link);
     margin: 1.5rem 0;
     padding: 1rem 0 1rem 1rem;
-    color: #5a738f;
+    color: var(--color-text-muted);
     font-style: italic;
   }
 
   .post-content :global(code) {
-    background-color: #62664f;
-    color: #ede8df;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family:
@@ -175,9 +175,9 @@ const { title, date, tags, backLink } = Astro.props as Props;
   }
 
   .post-content :global(pre) {
-    background-color: #3e3e3e;
+    background-color: var(--color-text-secondary);
     padding: 1rem;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     overflow-x: auto;
     margin: 1.5rem 0;
     line-height: 1.5;
@@ -185,25 +185,25 @@ const { title, date, tags, backLink } = Astro.props as Props;
 
   .post-content :global(pre code) {
     background-color: transparent;
-    color: #ede8df;
+    color: var(--color-text-light);
     padding: 0;
     border-radius: 0;
   }
 
   .post-footer {
-    border-top: 1px solid #ddd8cf;
+    border-top: 1px solid var(--color-border);
     padding-top: 1.5rem;
   }
 
   .back-link {
-    color: #3e8ce6;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
   .back-link:hover {
-    color: #2a5fa8;
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 

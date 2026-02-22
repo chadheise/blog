@@ -132,7 +132,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #d8cebd;
+    background-color: var(--color-bg);
     padding-bottom: 1rem;
   }
 
@@ -145,7 +145,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
   .directory-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #e64c3e;
+    color: var(--color-accent);
     margin-bottom: 0.5rem;
   }
 
@@ -162,7 +162,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
 
   .filter-label {
     font-size: 0.75rem;
-    color: #5a738f;
+    color: var(--color-text-muted);
     margin: 0;
   }
 
@@ -180,5 +180,6 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     .directory-title {
       font-size: 1.5rem;
     }
+
   }
 </style>

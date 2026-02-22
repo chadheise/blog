@@ -83,8 +83,8 @@ const viewAllLabel =
 
   .post-card {
     padding: 1rem;
-    border-radius: 8px;
-    background-color: #e5ddd4;
+    border-radius: var(--radius-card);
+    background-color: var(--color-bg-card);
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s ease;
@@ -97,14 +97,14 @@ const viewAllLabel =
   }
 
   .post-card:hover {
-    background-color: #ddd5cc;
+    background-color: var(--color-bg-card-hover);
   }
 
   .post-image-area {
     align-self: center;
     width: 80px;
     flex-shrink: 0;
-    border-radius: 6px;
+    border-radius: var(--radius-sm);
     overflow: hidden;
   }
 
@@ -131,7 +131,7 @@ const viewAllLabel =
   .post-title {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #62664f;
+    color: var(--color-primary);
     margin: 0;
     flex: 1;
     min-width: 0;
@@ -145,14 +145,14 @@ const viewAllLabel =
 
   .post-date {
     font-size: 0.875rem;
-    color: #5a738f;
+    color: var(--color-text-muted);
     font-weight: 400;
     margin: 0 0 0.5rem 0;
   }
 
   .post-excerpt {
     font-size: 0.95rem;
-    color: #3e3e3e;
+    color: var(--color-text-secondary);
     line-height: 1.6;
     margin: 0;
   }
@@ -160,14 +160,14 @@ const viewAllLabel =
   .view-all-link {
     display: inline-block;
     margin-top: 1rem;
-    color: #3e8ce6;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
   .view-all-link:hover {
-    color: #2a5fa8;
+    color: var(--color-link-hover);
     text-decoration: underline;
   }
 

@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+:root {
+  /* Primary palette */
+  --color-primary: #62664f;        /* olive green — headings, site name, tag fg */
+  --color-accent: #e64c3e;         /* red — section headings, post titles */
+  --color-accent-dark: #c22719;    /* darker red — accent hover */
+  --color-link: #3e8ce6;           /* blue — nav links, inline links */
+  --color-link-hover: #2a5fa8;     /* darker blue — link hover */
+
+  /* Backgrounds */
+  --color-bg: #d8cebd;             /* page background */
+  --color-bg-card: #e5ddd4;        /* card / featured-app background */
+  --color-bg-card-hover: #ddd5cc;  /* card hover background */
+  --color-bg-tag: #c5c0b4;         /* tag pill (deselected) background */
+
+  /* Text */
+  --color-text: #2c2c2c;           /* body text */
+  --color-text-secondary: #3e3e3e; /* content paragraphs, lists */
+  --color-text-muted: #5a738f;     /* dates, captions, footer */
+  --color-text-light: #ede8df;     /* text on dark backgrounds (selected tag, code) */
+
+  /* Borders */
+  --color-border: #ddd8cf;         /* dividers, separator lines */
+
+  /* Border radii */
+  --radius-card: 8px;
+  --radius-sm: 6px;
+  --radius-tag: 999px;
+}
