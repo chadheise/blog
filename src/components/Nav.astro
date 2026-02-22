@@ -116,6 +116,8 @@ const { backLink } = Astro.props;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 0.5rem;
   }
 
@@ -128,10 +130,10 @@ const { backLink } = Astro.props;
 
   .social-link {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
     text-decoration: none;
     transition: transform 0.2s ease;
   }
@@ -153,6 +155,9 @@ const { backLink } = Astro.props;
     color: var(--color-primary);
     text-decoration: none;
     transition: color 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .site-name:hover {
@@ -170,6 +175,9 @@ const { backLink } = Astro.props;
     color: var(--color-link);
     font-weight: 500;
     transition: color 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .nav-link:hover {
@@ -183,6 +191,9 @@ const { backLink } = Astro.props;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
   .back-link:hover {
@@ -193,6 +204,10 @@ const { backLink } = Astro.props;
   @media (max-width: 600px) {
     .nav-links {
       gap: 1rem;
+    }
+
+    .nav-secondary-row {
+      row-gap: 0.25rem;
     }
   }
 </style>

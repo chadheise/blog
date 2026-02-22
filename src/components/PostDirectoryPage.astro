@@ -32,7 +32,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     <Nav backLink={{ href: "/", label: "Home" }} />
     <h1 class="directory-title">{title}</h1>
 
-    <div class="filter-section">
+    <div class="filter-section" id="filter-section">
       <div class="filter-header">
         <p class="filter-label">Filter by tag:</p>
         <Tag as="button" label="All" selected={true} dataTag="__all__" />
@@ -75,6 +75,30 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     ).querySelectorAll<HTMLButtonElement>("button[data-tag]");
     const postCards =
       document.querySelectorAll<HTMLAnchorElement>(".post-card");
+
+    // Hide filter section on scroll down, show on scroll up (mobile only)
+    const filterEl = document.getElementById("filter-section");
+    if (filterEl) {
+      let lastScrollY = window.scrollY;
+      window.addEventListener("scroll", () => {
+        // Only apply on mobile breakpoint
+        if (window.innerWidth > 600) return;
+        const currentScrollY = window.scrollY;
+        const maxScroll =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const upDelta = lastScrollY - currentScrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 40) {
+          filterEl.classList.add("filter-hidden");
+        } else if (upDelta >= 10 && lastScrollY <= maxScroll + 1) {
+          // Require at least 10px of upward movement before showing.
+          // This ignores the small oscillations from the bottom bounce (typically 1-5px),
+          // while still responding naturally to intentional upward scrolling.
+          // Also guard against overscroll bounce where lastScrollY exceeded maxScroll.
+          filterEl.classList.remove("filter-hidden");
+        }
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    }
 
     function updatePostVisibility() {
       postCards.forEach((card) => {
@@ -151,7 +175,7 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
   .directory-title {
     font-size: 2rem;
     color: var(--color-accent);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .filter-section {
@@ -184,6 +208,22 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
 
     .directory-title {
       font-size: 1.5rem;
+    }
+
+    .filter-section {
+      overflow: hidden;
+      max-height: 200px;
+      opacity: 1;
+      transition:
+        max-height 0.25s ease,
+        opacity 0.25s ease,
+        margin-top 0.25s ease;
+    }
+
+    .filter-section.filter-hidden {
+      max-height: 0;
+      opacity: 0;
+      margin-top: 0;
     }
   }
 </style>

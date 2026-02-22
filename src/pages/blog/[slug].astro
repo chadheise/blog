@@ -45,7 +45,7 @@ if (!selectedPost || !Content) {
 const { frontmatter } = selectedPost;
 ---
 
-<Layout>
+<Layout title={frontmatter.title}>
   <BlogPostLayout
     title={frontmatter.title}
     date={frontmatter.date}
