@@ -8,7 +8,7 @@ import Nav from "./Nav.astro";
 ---
 
 <div class="landing">
-  <header class="header">
+  <header class="header" id="page-header">
     <h1 class="name">Chad Heise</h1>
     <p class="tagline">Software Engineer, Hobbyist, Maker</p>
   </header>
@@ -99,7 +99,7 @@ import Nav from "./Nav.astro";
 
   .header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding-top: 2rem;
   }
 
@@ -123,6 +123,7 @@ import Nav from "./Nav.astro";
 
   .section {
     margin-bottom: 2.5rem;
+    scroll-margin-top: 6rem;
   }
 
   .section h2 {
@@ -272,3 +273,24 @@ import Nav from "./Nav.astro";
     }
   }
 </style>
+
+<script>
+  const pageHeader = document.getElementById("page-header");
+  const siteName = document.querySelector<HTMLElement>(".site-name");
+
+  if (pageHeader && siteName) {
+    const header = pageHeader;
+    const name = siteName;
+
+    function updateOpacities() {
+      const rect = header.getBoundingClientRect();
+      // As the bottom of the header reaches the top of the viewport, opacity goes 1 → 0
+      const headerOpacity = Math.max(0, Math.min(1, rect.bottom / rect.height));
+      header.style.opacity = String(headerOpacity);
+      name.style.opacity = String(1 - headerOpacity);
+    }
+
+    updateOpacities();
+    window.addEventListener("scroll", updateOpacities, { passive: true });
+  }
+</script>
