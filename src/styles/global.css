@@ -27,4 +27,8 @@
   --radius-card: 8px;
   --radius-sm: 6px;
   --radius-tag: 999px;
+
+  /* Fonts */
+  --font-title: "K2D", sans-serif;
+  --font-body: "Outfit", sans-serif;
 }
