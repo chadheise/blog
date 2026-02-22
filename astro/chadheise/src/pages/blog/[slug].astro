@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostLayout from '../../components/BlogPostLayout.astro';
+import { parseAndSortBlogPosts, transformImagePaths } from '../../lib/blog';
+
+interface Props {
+  slug: string;
+}
+
+export async function getStaticPaths() {
+  const posts = await parseAndSortBlogPosts();
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { slug } = Astro.params as Props;
+const posts = await import.meta.glob<
+  Record<string, any>
+>('/src/content/blog/*.md', { eager: true });
+
+// Find the markdown file that matches this slug
+let selectedPost = null;
+let Content = null;
+
+for (const [filePath, module] of Object.entries(posts)) {
+  const fileName = filePath.split('/').pop() || '';
+  const fileSlug = fileName
+    .replace(/^\d{4}-\d{2}-\d{2}-/, '')
+    .replace(/\.md$/, '');
+
+  if (fileSlug === slug) {
+    selectedPost = module;
+    Content = module.default;
+    break;
+  }
+}
+
+if (!selectedPost || !Content) {
+  return Astro.redirect('/blog');
+}
+
+const { frontmatter } = selectedPost;
+---
+
+<Layout>
+  <BlogPostLayout title={frontmatter.title} date={frontmatter.date}>
+    <Content />
+  </BlogPostLayout>
+</Layout>

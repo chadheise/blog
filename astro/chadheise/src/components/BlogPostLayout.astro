@@ -1,0 +1,204 @@
+---
+import { formatDate } from '../lib/blog';
+
+interface Props {
+  title: string;
+  date: string;
+}
+
+const { title, date } = Astro.props as Props;
+---
+
+<article class="blog-post">
+  <header class="blog-post-header">
+    <h1 class="blog-post-title">{title}</h1>
+    <p class="blog-post-date">{formatDate(date)}</p>
+  </header>
+
+  <div class="blog-post-content">
+    <slot />
+  </div>
+
+  <footer class="blog-post-footer">
+    <a href="/blog" class="back-link">← Back to Blog</a>
+  </footer>
+</article>
+
+<style>
+  .blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-post-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #DDD8CF;
+    padding-bottom: 1.5rem;
+  }
+
+  .blog-post-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #62664F;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .blog-post-date {
+    font-size: 0.95rem;
+    color: #5A738F;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .blog-post-content {
+    flex: 1;
+    margin-bottom: 2rem;
+  }
+
+  /* Markdown content typography */
+  .blog-post-content :global(h1),
+  .blog-post-content :global(h2),
+  .blog-post-content :global(h3),
+  .blog-post-content :global(h4),
+  .blog-post-content :global(h5),
+  .blog-post-content :global(h6) {
+    color: #62664F;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .blog-post-content :global(h1) {
+    font-size: 1.75rem;
+  }
+
+  .blog-post-content :global(h2) {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-content :global(h3) {
+    font-size: 1.25rem;
+  }
+
+  .blog-post-content :global(p) {
+    color: #3E3E3E;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .blog-post-content :global(a) {
+    color: #3E8CE6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .blog-post-content :global(a:hover) {
+    color: #2A5FA8;
+    text-decoration: underline;
+  }
+
+  .blog-post-content :global(img) {
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+  }
+
+  .blog-post-content :global(ul),
+  .blog-post-content :global(ol) {
+    color: #3E3E3E;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .blog-post-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-post-content :global(blockquote) {
+    border-left: 4px solid #3E8CE6;
+    margin: 1.5rem 0;
+    padding: 1rem 0 1rem 1rem;
+    color: #5A738F;
+    font-style: italic;
+  }
+
+  .blog-post-content :global(code) {
+    background-color: #f0f0f0;
+    color: #d83333;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas,
+      'DejaVu Sans Mono', monospace;
+    font-size: 0.9em;
+  }
+
+  .blog-post-content :global(pre) {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+
+  .blog-post-content :global(pre code) {
+    background-color: transparent;
+    color: #2c2c2c;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .blog-post-footer {
+    border-top: 1px solid #DDD8CF;
+    padding-top: 1.5rem;
+  }
+
+  .back-link {
+    color: #3E8CE6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .back-link:hover {
+    color: #2A5FA8;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .blog-post {
+      padding: 1.5rem 1rem;
+    }
+
+    .blog-post-title {
+      font-size: 1.5rem;
+    }
+
+    .blog-post-header {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .blog-post-content :global(h1) {
+      font-size: 1.5rem;
+    }
+
+    .blog-post-content :global(h2) {
+      font-size: 1.25rem;
+    }
+
+    .blog-post-content :global(h3) {
+      font-size: 1.1rem;
+    }
+
+    .blog-post-content :global(p) {
+      font-size: 0.95rem;
+    }
+  }
+</style>
