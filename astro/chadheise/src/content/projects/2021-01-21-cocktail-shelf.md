@@ -2,10 +2,10 @@
 title: Cocktail Shelf
 date: 2021-01-21
 tags: woodworking
-image: /assets/img/woodworking/cocktail_shelf/IMG_8741.jpg
+image: /assets/img/2021-01-21-cocktail-shelf/IMG_8741.jpg
 ---
 
-![Cocktail shelf](/assets/img/woodworking/cocktail_shelf/IMG_8741.jpg)
+![Cocktail shelf](/assets/img/2021-01-21-cocktail-shelf/IMG_8741.jpg)
 
 ## Designs
 
@@ -22,10 +22,10 @@ image: /assets/img/woodworking/cocktail_shelf/IMG_8741.jpg
 ## Pictures
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8715.jpg" alt="Cocktail shelf" />
-  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8717.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/2021-01-21-cocktail-shelf/IMG_8715.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/2021-01-21-cocktail-shelf/IMG_8717.jpg" alt="Cocktail shelf" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8732.jpg" alt="Cocktail shelf" />
-  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8733.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/2021-01-21-cocktail-shelf/IMG_8732.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/2021-01-21-cocktail-shelf/IMG_8733.jpg" alt="Cocktail shelf" />
 </div>

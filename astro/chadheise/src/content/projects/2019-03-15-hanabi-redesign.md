@@ -2,10 +2,10 @@
 title: Hanabi Redesign
 date: 2019-03-15
 tags: design, board games
-image: /assets/img/hanabiTitle.jpg
+image: /assets/img/2019-03-15-hanabi-redesign/hanabiTitle.jpg
 ---
 
-![Hanabi title card](/assets/img/hanabiTitle.jpg)
+![Hanabi title card](/assets/img/2019-03-15-hanabi-redesign/hanabiTitle.jpg)
 
 One of my favorite games is [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi). It is a game of logic and deduction and has a cool firework theme (Hanabi is Japanese for "firework"). If you haven't played it, I highly recommend you try it out. You can purchase it on [Amazon here](https://www.amazon.com/dp/B00CYQ9Q76). Given I play the game quite frequently, I wanted to see if I could make a better deck of cards to play with.
 
@@ -27,7 +27,7 @@ I needed to choose pips to go with the white, yellow and rainbow suits. The choi
 
 With the suits decided, I went about designing the icons in Illustrator. I used simple geometric shapes and worked to make them of consistent dimensions when possible (e.g. the rainbows and clouds are the same width as the stars and hearts) Given their similar form, I also ensured the designs were consistent between the clubs and spades such that they could be overlaid and line up perfectly. Although not strictly necessary, I like the consistency this provided. After finalizing the pips, I looked at traditional playing cards to determine how to arrange the symbols on the cards for each number. Because the suit symbols are not strictly required for the game, I chose not to include these below the number on each card. This gave me some more room to work with for the main layout since I wanted to keep the numbers relatively large so they could be easily read across the table.
 
-<img src="/assets/img/hanabiFives.jpg" alt="Hanabi fives" width="200" style="float:right;margin:16px" />
+<img src="/assets/img/2019-03-15-hanabi-redesign/hanabiFives.jpg" alt="Hanabi fives" width="200" style="float:right;margin:16px" />
 
 I applied the main colors to the numbers and symbols on each card while using a lighter version of each color as the background. Having the cards in full color makes them much easier to identify when playing. In addition to being large, a thick, black stroke (white for spades) was added to the numbers to make them even more readable.
 
@@ -35,7 +35,7 @@ With the main cards done, I had two more design tasks. The first was to create t
 
 <div>
 <div style="float:left;display:block;width:165px;margin-right:16px;padding-right:8px;">
-<img src="/assets/img/hanabiBombs.jpg" alt="Hanabi bombs" width="165" />
+<img src="/assets/img/2019-03-15-hanabi-redesign/hanabiBombs.jpg" alt="Hanabi bombs" width="165" />
 <p>This card indicates players made one mistake (bomb) and have 5 clues remaining</p>
 </div>
 
@@ -45,4 +45,4 @@ Lastly, I determined a layout that would allow players to keep track of the clue
 
 Overall I am quite pleased with how the cards turned out. They work well for game play and accomplished the objectives I set out at the beginning of this project. Although you won't get the durability of plastic cards, you can [download a printable copy of my cards](/assets/files/2019-03-15-hanabi-redesign/hanabicards.pdf) and test them out for yourself.
 
-![Hanabi cards spread](/assets/img/hanabiCardsSpread.jpg)
+![Hanabi cards spread](/assets/img/2019-03-15-hanabi-redesign/hanabiCardsSpread.jpg)

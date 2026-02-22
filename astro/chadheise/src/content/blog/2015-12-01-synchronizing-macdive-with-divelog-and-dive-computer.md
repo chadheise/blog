@@ -2,10 +2,10 @@
 title: Synchronizing MacDive with DiveLog and Dive Computer
 date: 2015-12-01
 tags: scuba, technology
-image: /assets/img/butterflyFish.jpg
+image: /assets/img/2015-12-01-synchronizing-macdive-with-divelog-and-dive-computer/butterflyFish.jpg
 ---
 
-<img src="{{site.baseurl}}/assets/img/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
+<img src="/assets/img/2015-12-01-synchronizing-macdive-with-divelog-and-dive-computer/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
 
 # Overview
 

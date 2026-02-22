@@ -2,10 +2,10 @@
 title: Cutting Boards
 date: 2021-08-01
 tags: woodworking
-image: /assets/img/woodworking/cutting_boards/IMG_9570.jpg
+image: /assets/img/2021-08-01-cutting-boards/IMG_9570.jpg
 ---
 
-![Cutting boards](/assets/img/woodworking/cutting_boards/IMG_9570.jpg)
+![Cutting boards](/assets/img/2021-08-01-cutting-boards/IMG_9570.jpg)
 
 ## Designs
 
@@ -35,58 +35,58 @@ For 1 cutting board approximately 16 in x 21 in:
 ## Pictures
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9450.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9455.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9450.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9455.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9458.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9464.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9458.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9464.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9465.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9478.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9465.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9478.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9480.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9484.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9480.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9484.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9511.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9512.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9511.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9512.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9513.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9528.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9513.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9528.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9531.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9533.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9531.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9533.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9534.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9535.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9534.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9535.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9537.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9544.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9537.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9544.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9549.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9550.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9549.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9550.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9551.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9552.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9551.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9552.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9558.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9563.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9558.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9563.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9567.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9570.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9567.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9570.jpg" alt="Cutting board" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9571.jpg" alt="Cutting board" />
-  <img src="/assets/img/woodworking/cutting_boards/IMG_9572.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9571.jpg" alt="Cutting board" />
+  <img src="/assets/img/2021-08-01-cutting-boards/IMG_9572.jpg" alt="Cutting board" />
 </div>

@@ -2,12 +2,12 @@
 title: Shot Glass Display
 date: 2021-07-22
 tags: woodworking
-image: /assets/img/woodworking/shot_glass_display/IMG_9510.jpg
+image: /assets/img/2021-07-12-shot-glass-display/IMG_9510.jpg
 ---
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/sketchupDesign.png" alt="Shot glass display design" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9510.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/sketchupDesign.png" alt="Shot glass display design" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9510.jpg" alt="Shot glass display" />
 </div>
 
 ## Designs
@@ -32,38 +32,38 @@ image: /assets/img/woodworking/shot_glass_display/IMG_9510.jpg
 ## Pictures
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9432.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9433.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9432.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9433.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9434.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9451.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9434.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9451.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9453.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9454.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9453.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9454.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9460.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9461.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9460.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9461.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9468.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9475.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9468.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9475.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9489.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9490.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9489.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9490.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9477.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9501.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9477.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9501.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9497.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9499.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9497.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9499.jpg" alt="Shot glass display" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9507.jpg" alt="Shot glass display" />
-  <img src="/assets/img/woodworking/shot_glass_display/IMG_9509.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9507.jpg" alt="Shot glass display" />
+  <img src="/assets/img/2021-07-12-shot-glass-display/IMG_9509.jpg" alt="Shot glass display" />
 </div>

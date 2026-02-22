@@ -2,10 +2,10 @@
 title: Cross Cut Sled
 date: 2020-06-27
 tags: woodworking
-image: assets/img/woodworking/cross_cut_sled/IMG_7647.jpg
+image: /assets/img/2020-06-27-cross-cut-sled/IMG_7647.jpg
 ---
 
-![Cross cut sled](/assets/img/woodworking/cross_cut_sled/IMG_7647.jpg)
+![Cross cut sled](/assets/img/2020-06-27-cross-cut-sled/IMG_7647.jpg)
 
 ## Supplies
 
@@ -16,4 +16,4 @@ image: assets/img/woodworking/cross_cut_sled/IMG_7647.jpg
 
 ## Pictures
 
-![Cross cut sled](/assets/img/woodworking/cross_cut_sled/IMG_7646.jpg)
+![Cross cut sled](/assets/img/2020-06-27-cross-cut-sled/IMG_7646.jpg)

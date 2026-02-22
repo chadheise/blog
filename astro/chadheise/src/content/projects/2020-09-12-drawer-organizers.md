@@ -2,7 +2,7 @@
 title: Drawer Organizers
 date: 2020-09-12
 tags: woodworking
-image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
+image: /assets/img/2020-09-12-drawer-organizers/IMG_7867.jpg
 ---
 
 ## Supplies
@@ -13,7 +13,7 @@ image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 
 ## Silverware
 
-![Silverware drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_7867.jpg)
+![Silverware drawer organizer](/assets/img/2020-09-12-drawer-organizers/IMG_7867.jpg)
 
 ### Designs
 
@@ -22,15 +22,15 @@ image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 ### Pictures
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_7863.jpg" alt="Drawer organizer" />
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_7866.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_7863.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_7866.jpg" alt="Drawer organizer" />
 </div>
 
-![Drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_7868.jpg)
+![Drawer organizer](/assets/img/2020-09-12-drawer-organizers/IMG_7868.jpg)
 
 ## Kitchen Utensils
 
-![Kitchen utensil drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_8688.jpg)
+![Kitchen utensil drawer organizer](/assets/img/2020-09-12-drawer-organizers/IMG_8688.jpg)
 
 ### Designs
 
@@ -38,20 +38,20 @@ image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 
 ## Bathroom Drawer
 
-![Bathroom drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_9100.jpg)
+![Bathroom drawer organizer](/assets/img/2020-09-12-drawer-organizers/IMG_9100.jpg)
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9101.jpg" alt="Drawer organizer" />
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9102.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9101.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9102.jpg" alt="Drawer organizer" />
 </div>
 <div class="image-grid">
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9106.jpg" alt="Drawer organizer" />
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9120.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9106.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9120.jpg" alt="Drawer organizer" />
 </div>
 
-![Drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_9119.jpg)
+![Drawer organizer](/assets/img/2020-09-12-drawer-organizers/IMG_9119.jpg)
 
 <div class="image-grid">
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9098.jpg" alt="Drawer organizer" />
-  <img src="/assets/img/woodworking/drawer_organizers/IMG_9121.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9098.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/2020-09-12-drawer-organizers/IMG_9121.jpg" alt="Drawer organizer" />
 </div>
