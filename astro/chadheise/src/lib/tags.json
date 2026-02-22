@@ -1,0 +1,42 @@
+[
+    {
+        "label": "3D printing",
+        "emoji": "🖨️"
+    },
+    {
+        "label": "board games",
+        "emoji": "🎲"
+    },
+    {
+        "label": "design",
+        "emoji": "✏️"
+    },
+    {
+        "label": "movies",
+        "emoji": "🎥"
+    },
+    {
+        "label": "running",
+        "emoji": "🏃‍♂️‍➡️"
+    },
+    {
+        "label": "scuba",
+        "emoji": "🤿"
+    },
+    {
+        "label": "skiing/snowboarding",
+        "emoji": "⛷️"
+    },
+    {
+        "label": "software",
+        "emoji": "👨‍💻"
+    },
+    {
+        "label": "technology",
+        "emoji": "🖥️"
+    },
+    {
+        "label": "woodworking",
+        "emoji": "🪵"
+    }
+]
