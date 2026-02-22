@@ -1,39 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import PostList from "../../components/PostList.astro";
-import Nav from "../../components/Nav.astro";
+import PostDirectoryPage from "../../components/PostDirectoryPage.astro";
 ---
 
 <Layout>
-  <div class="blog-index">
-    <Nav backLink={{ href: "/", label: "Home" }} />
-    <h1 class="blog-index-title">Blog</h1>
-    <PostList directory="blog" />
-  </div>
+  <PostDirectoryPage title="Blog" directory="blog" />
 </Layout>
-
-<style>
-  .blog-index {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    min-height: 100vh;
-  }
-
-  .blog-index-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #e64c3e;
-    margin-bottom: 0.5rem;
-  }
-
-  @media (max-width: 600px) {
-    .blog-index {
-      padding: 1.5rem 1rem;
-    }
-
-    .blog-index-title {
-      font-size: 1.5rem;
-    }
-  }
-</style>

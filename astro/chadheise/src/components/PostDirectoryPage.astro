@@ -1,0 +1,43 @@
+---
+import Nav from "./Nav.astro";
+import PostList from "./PostList.astro";
+
+interface Props {
+  title: string;
+  directory: "blog" | "projects";
+}
+
+const { title, directory } = Astro.props as Props;
+---
+
+<div class="directory-page">
+  <Nav backLink={{ href: "/", label: "Home" }} />
+  <h1 class="directory-title">{title}</h1>
+  <PostList directory={directory} />
+</div>
+
+<style>
+  .directory-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+  }
+
+  .directory-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e64c3e;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .directory-page {
+      padding: 1.5rem 1rem;
+    }
+
+    .directory-title {
+      font-size: 1.5rem;
+    }
+  }
+</style>
