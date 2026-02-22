@@ -4,19 +4,13 @@ date:   2021-07-22
 permalink: "/woodworking/shot_glass_display"
 category: "woodworking"
 ---
-<div style="display:flex;flex-direction:column;align-content:space-between;" >
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/sketchupDesign.png" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9510.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/sketchupDesign.png" alt="Shot glass display design" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9510.jpg" alt="Shot glass display" />
 </div>
 
 ## Designs
-* [SketchUp]({{site.baseurl}}/assets/files/woodworking/shotGlassDisplay.skp)
+* [SketchUp](/assets/files/woodworking/shotGlassDisplay.skp)
 
 ## Supplies
 * 3/4" Select Pine
@@ -33,85 +27,39 @@ category: "woodworking"
 
 ## Pictures
 
-<div style="display:flex;flex-direction:column;align-content:space-between;" >
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9432.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9433.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9434.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9451.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9453.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9454.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9460.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9461.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9468.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9475.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9489.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9490.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9477.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9501.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9497.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9499.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
-	
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9507.jpg" alt="shotGlassDisplay" />
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/shot_glass_display/IMG_9509.jpg" alt="shotGlassDisplay" />
-		</div>
-	</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9432.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9433.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9434.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9451.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9453.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9454.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9460.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9461.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9468.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9475.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9489.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9490.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9477.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9501.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9497.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9499.jpg" alt="Shot glass display" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9507.jpg" alt="Shot glass display" />
+  <img src="/assets/img/woodworking/shot_glass_display/IMG_9509.jpg" alt="Shot glass display" />
 </div>

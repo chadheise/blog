@@ -4,7 +4,7 @@ date:   2020-06-27
 permalink: "/woodworking/cross_cut_sled"
 category: "woodworking"
 ---
-![IMG_7647]({{site.baseurl}}/assets/img/woodworking/cross_cut_sled/IMG_7647.jpg)
+![Cross cut sled](/assets/img/woodworking/cross_cut_sled/IMG_7647.jpg)
 
 ## Supplies
 * 1/2" oak plywood
@@ -13,5 +13,4 @@ category: "woodworking"
 * Screws
 
 ## Pictures
-![IMG_7646]({{site.baseurl}}/assets/img/woodworking/cross_cut_sled/IMG_7646.jpg)
-
+![Cross cut sled](/assets/img/woodworking/cross_cut_sled/IMG_7646.jpg)

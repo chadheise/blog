@@ -119,6 +119,20 @@ const { title, date, backLink } = Astro.props as Props;
     border-radius: 4px;
   }
 
+  .post-content :global(.image-grid) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 1rem 0;
+  }
+
+  .post-content :global(.image-grid img) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+
   .post-content :global(ul),
   .post-content :global(ol) {
     color: #3e3e3e;

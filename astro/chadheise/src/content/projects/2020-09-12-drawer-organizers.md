@@ -12,84 +12,43 @@ category: "woodworking"
 
 ## Silverware
 
-![IMG_7867]({{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7867.jpg)
+![Silverware drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_7867.jpg)
 
 ### Designs
-* [SketchUp]({{site.baseurl}}/assets/files/woodworking/silverwareDrawer.skp)
+* [SketchUp](/assets/files/woodworking/silverwareDrawer.skp)
 
 ### Pictures
 
-<div style="display:flex;flex-direction:column;align-content:space-between;" >
-
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7863.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7866.jpg" alt="drawer_organizer"/>
-		</div>
-	</div>
-
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_7868.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-		</div>
-	</div>
-
+<div class="image-grid">
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_7863.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_7866.jpg" alt="Drawer organizer" />
 </div>
 
+![Drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_7868.jpg)
+
 ## Kitchen Utensils
-![IMG_8688]({{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_8688.jpg)
+
+![Kitchen utensil drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_8688.jpg)
 
 ### Designs
-* [PDF]({{site.baseurl}}/assets/files/woodworking/kitchenDrawer.pdf)
+* [PDF](/assets/files/woodworking/kitchenDrawer.pdf)
 
 ## Bathroom Drawer
-<div style="display:flex;flex-direction:column;align-content:space-between;" >
 
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9100.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-		</div>
-	</div>
-	
-		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9101.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9102.jpg" alt="drawer_organizer"/>
-		</div>
-	</div>
-	
-		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9106.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9120.jpg" alt="drawer_organizer"/>
-		</div>
-	</div>
-	
-		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9119.jpg" alt="drawer_organizer"/>
-		</div>
-	</div>
-	
-		<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9098.jpg" alt="drawer_organizer"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/drawer_organizers/IMG_9121.jpg" alt="drawer_organizer"/>
-		</div>
-	</div>
+![Bathroom drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_9100.jpg)
 
+<div class="image-grid">
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9101.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9102.jpg" alt="Drawer organizer" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9106.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9120.jpg" alt="Drawer organizer" />
+</div>
 
+![Drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_9119.jpg)
 
+<div class="image-grid">
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9098.jpg" alt="Drawer organizer" />
+  <img src="/assets/img/woodworking/drawer_organizers/IMG_9121.jpg" alt="Drawer organizer" />
 </div>

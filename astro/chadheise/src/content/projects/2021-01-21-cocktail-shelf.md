@@ -4,10 +4,10 @@ date:   2021-01-21
 permalink: "/woodworking/cocktail_shelf"
 category: "woodworking"
 ---
-![IMG_8741]({{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8741.jpg)
+![Cocktail shelf](/assets/img/woodworking/cocktail_shelf/IMG_8741.jpg)
 
 ## Designs
-* [SketchUp]({{site.baseurl}}/assets/files/woodworking/cocktailShelf.skp)
+* [SketchUp](/assets/files/woodworking/cocktailShelf.skp)
 
 ## Supplies
 * 1/4" Padauk
@@ -17,24 +17,12 @@ category: "woodworking"
 * Minwax semi-gloss polyurethane
 
 ## Pictures
-<div style="display:flex;flex-direction:column;align-content:space-between;" >
 
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8715.jpg" alt="cocktailShelf"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8717.jpg" alt="cocktailShelf"/>
-		</div>
-	</div>
-
-	<div style="display:flex;flex-direction:row;align-content:space-between;flex:1;" >
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8732.jpg" alt="cocktailShelf"/>
-		</div>
-		<div style="flex:1;margin:8px;">
-			<img src="{{site.baseurl}}/assets/img/woodworking/cocktail_shelf/IMG_8733.jpg" alt="cocktailShelf"/>
-		</div>
-	</div>
-
+<div class="image-grid">
+  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8715.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8717.jpg" alt="Cocktail shelf" />
+</div>
+<div class="image-grid">
+  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8732.jpg" alt="Cocktail shelf" />
+  <img src="/assets/img/woodworking/cocktail_shelf/IMG_8733.jpg" alt="Cocktail shelf" />
 </div>
