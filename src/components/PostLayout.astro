@@ -2,6 +2,7 @@
 import { formatDate } from "../lib/post";
 import Nav from "./Nav.astro";
 import TagList from "./TagList.astro";
+import Footer from "./Footer.astro";
 
 interface Props {
   title: string;
@@ -37,6 +38,7 @@ const { title, date, tags, backLink } = Astro.props as Props;
       }
     </footer>
   </article>
+  <Footer />
 </div>
 
 <style>
