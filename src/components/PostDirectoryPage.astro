@@ -2,10 +2,7 @@
 import Nav from "./Nav.astro";
 import PostList from "./PostList.astro";
 import Tag from "./Tag.astro";
-import {
-  parseAndSortBlogPosts,
-  parseAndSortProjectPosts,
-} from "../lib/post";
+import { parseAndSortBlogPosts, parseAndSortProjectPosts } from "../lib/post";
 
 interface Props {
   title: string;
@@ -34,24 +31,29 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     <Nav backLink={{ href: "/", label: "Home" }} />
     <h1 class="directory-title">{title}</h1>
 
-  <div class="filter-section">
-    <div class="filter-header">
-      <p class="filter-label">Filter by tag:</p>
-      <Tag as="button" label="All" selected={true} dataTag="__all__" />
-      <Tag as="button" label="None" selected={false} dataTag="__none__" />
+    <div class="filter-section">
+      <div class="filter-header">
+        <p class="filter-label">Filter by tag:</p>
+        <Tag as="button" label="All" selected={true} dataTag="__all__" />
+        <Tag as="button" label="None" selected={false} dataTag="__none__" />
+      </div>
+      <div
+        class="filter-tags"
+        id="filter-tags"
+        data-all-tags={JSON.stringify(uniqueTags.map((t) => t.toLowerCase()))}
+      >
+        {
+          uniqueTags.map((tag) => (
+            <Tag
+              as="button"
+              label={tag}
+              selected={true}
+              dataTag={tag.toLowerCase()}
+            />
+          ))
+        }
+      </div>
     </div>
-    <div
-      class="filter-tags"
-      id="filter-tags"
-      data-all-tags={JSON.stringify(uniqueTags.map((t) => t.toLowerCase()))}
-    >
-      {
-        uniqueTags.map((tag) => (
-          <Tag as="button" label={tag} selected={true} dataTag={tag.toLowerCase()} />
-        ))
-      }
-    </div>
-  </div>
   </div>
 
   <PostList directory={directory} />
@@ -66,7 +68,9 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     const selectedTags = new Set<string>(allTagsData);
 
     const filterSection = filterContainer.closest(".filter-section");
-    const filterButtons = (filterSection ?? filterContainer).querySelectorAll<HTMLButtonElement>("button[data-tag]");
+    const filterButtons = (
+      filterSection ?? filterContainer
+    ).querySelectorAll<HTMLButtonElement>("button[data-tag]");
     const postCards =
       document.querySelectorAll<HTMLAnchorElement>(".post-card");
 
@@ -144,7 +148,6 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
 
   .directory-title {
     font-size: 2rem;
-    font-weight: 700;
     color: var(--color-accent);
     margin-bottom: 0.5rem;
   }
@@ -180,6 +183,5 @@ const uniqueTags = [...tagSet].sort((a, b) => a.localeCompare(b));
     .directory-title {
       font-size: 1.5rem;
     }
-
   }
 </style>
