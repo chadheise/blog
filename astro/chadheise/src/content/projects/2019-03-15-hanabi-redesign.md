@@ -43,6 +43,6 @@ With the main cards done, I had two more design tasks. The first was to create t
 Lastly, I determined a layout that would allow players to keep track of the clues and bombs used using a simple "card cover-up" method instead of requiring the tokens used in the original game. Although the tokens are nice and tactile, they are difficult to transport and easy to lose. Using cards to do this tracking allows the entire game to pack up in a simple card deck with no other pieces needed. The clock and bomb images for the clue trackers were a bit tricky but after some persistence, I'm satisfied with the result.</p>
 </div>
 
-Overall I am quite pleased with how the cards turned out. They work well for game play and accomplished the objectives I set out at the beginning of this project. Although you won't get the durability of plastic cards, you can [download a printable copy of my cards](/assets/files/hanabicards.pdf) and test them out for yourself.
+Overall I am quite pleased with how the cards turned out. They work well for game play and accomplished the objectives I set out at the beginning of this project. Although you won't get the durability of plastic cards, you can [download a printable copy of my cards](/assets/files/2019-03-15-hanabi-redesign/hanabicards.pdf) and test them out for yourself.
 
 ![Hanabi cards spread](/assets/img/hanabiCardsSpread.jpg)

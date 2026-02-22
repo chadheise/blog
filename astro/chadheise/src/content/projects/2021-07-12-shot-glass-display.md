@@ -12,7 +12,7 @@ image: /assets/img/woodworking/shot_glass_display/IMG_9510.jpg
 
 ## Designs
 
-- [SketchUp](/assets/files/woodworking/shotGlassDisplay.skp)
+- [SketchUp](/assets/files/2021-07-12-shot-glass-display/shotGlassDisplay.skp)
 
 ## Supplies
 

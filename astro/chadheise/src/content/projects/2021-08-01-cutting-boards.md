@@ -9,7 +9,7 @@ image: /assets/img/woodworking/cutting_boards/IMG_9570.jpg
 
 ## Designs
 
-- [PDF](/assets/files/woodworking/cuttingBoard.pdf)
+- [PDF](/assets/files/2021-08-01-cutting-boards/cuttingBoard.pdf)
 - [Cutting board designer](https://ericu.github.io/CBDJS/cb.html)
 
 ## Supplies

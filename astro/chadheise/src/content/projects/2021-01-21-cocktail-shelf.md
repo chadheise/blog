@@ -9,7 +9,7 @@ image: /assets/img/woodworking/cocktail_shelf/IMG_8741.jpg
 
 ## Designs
 
-- [SketchUp](/assets/files/woodworking/cocktailShelf.skp)
+- [SketchUp](/assets/files/2021-01-21-cocktail-shelf/cocktailShelf.skp)
 
 ## Supplies
 

@@ -17,7 +17,7 @@ image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 
 ### Designs
 
-- [SketchUp](/assets/files/woodworking/silverwareDrawer.skp)
+- [SketchUp](/assets/files/2020-09-12-drawer-organizers/silverwareDrawer.skp)
 
 ### Pictures
 
@@ -34,7 +34,7 @@ image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 
 ### Designs
 
-- [PDF](/assets/files/woodworking/kitchenDrawer.pdf)
+- [PDF](/assets/files/2020-09-12-drawer-organizers/kitchenDrawer.pdf)
 
 ## Bathroom Drawer
 
