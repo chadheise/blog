@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import BlogPostLayout from "../../components/BlogPostLayout.astro";
-import { parseAndSortProjectPosts } from "../../lib/blog";
+import BlogPostLayout from "../../components/PostLayout.astro";
+import { parseAndSortProjectPosts } from "../../lib/post";
 
 export async function getStaticPaths() {
   const posts = await parseAndSortProjectPosts();

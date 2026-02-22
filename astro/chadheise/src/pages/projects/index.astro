@@ -1,12 +1,12 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import ProjectList from '../../components/ProjectList.astro';
-import Nav from '../../components/Nav.astro';
+import Layout from "../../layouts/Layout.astro";
+import ProjectList from "../../components/ProjectList.astro";
+import Nav from "../../components/Nav.astro";
 ---
 
 <Layout>
   <div class="projects-index">
-    <Nav backLink={{ href: '/', label: 'Home' }} />
+    <Nav backLink={{ href: "/", label: "Home" }} />
     <h1 class="projects-index-title">Projects</h1>
     <ProjectList />
   </div>
@@ -23,7 +23,7 @@ import Nav from '../../components/Nav.astro';
   .projects-index-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #62664F;
+    color: #62664f;
     margin-bottom: 0.5rem;
   }
 

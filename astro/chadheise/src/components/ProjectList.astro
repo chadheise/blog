@@ -1,5 +1,5 @@
 ---
-import { parseAndSortProjectPosts, formatDate } from '../lib/blog';
+import { parseAndSortProjectPosts, formatDate } from "../lib/post";
 
 interface Props {
   limit?: number;
@@ -12,19 +12,25 @@ const showViewAll = limit !== undefined && allPosts.length > limit;
 ---
 
 <div class="project-list">
-  {posts.map((post) => (
-    <a href={post.url} class="project-card">
-      <div class="project-card-content">
-        <h3 class="project-title">{post.title}</h3>
-        <p class="project-date">{formatDate(post.frontmatter.date)}</p>
-        <p class="project-excerpt">{post.excerpt}</p>
-      </div>
-    </a>
-  ))}
+  {
+    posts.map((post) => (
+      <a href={post.url} class="project-card">
+        <div class="project-card-content">
+          <h3 class="project-title">{post.title}</h3>
+          <p class="project-date">{formatDate(post.frontmatter.date)}</p>
+          <p class="project-excerpt">{post.excerpt}</p>
+        </div>
+      </a>
+    ))
+  }
 </div>
-{showViewAll && (
-  <a href="/projects" class="view-all-link">View all projects →</a>
-)}
+{
+  showViewAll && (
+    <a href="/projects" class="view-all-link">
+      View all projects →
+    </a>
+  )
+}
 
 <style>
   .project-list {
@@ -41,14 +47,14 @@ const showViewAll = limit !== undefined && allPosts.length > limit;
     margin: 0;
     padding: 1rem;
     border-radius: 8px;
-    background-color: #E5DDD4;
+    background-color: #e5ddd4;
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s ease;
   }
 
   .project-card:hover {
-    background-color: #DDD5CC;
+    background-color: #ddd5cc;
   }
 
   .project-card-content {
@@ -58,20 +64,20 @@ const showViewAll = limit !== undefined && allPosts.length > limit;
   .project-title {
     font-size: 1.125rem;
     font-weight: 600;
-    color: #62664F;
+    color: #62664f;
     margin: 0 0 0.25rem 0;
   }
 
   .project-date {
     font-size: 0.875rem;
-    color: #5A738F;
+    color: #5a738f;
     font-weight: 400;
     margin: 0 0 0.5rem 0;
   }
 
   .project-excerpt {
     font-size: 0.95rem;
-    color: #3E3E3E;
+    color: #3e3e3e;
     line-height: 1.6;
     margin: 0;
   }
@@ -79,14 +85,14 @@ const showViewAll = limit !== undefined && allPosts.length > limit;
   .view-all-link {
     display: inline-block;
     margin-top: 1rem;
-    color: #3E8CE6;
+    color: #3e8ce6;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
   }
 
   .view-all-link:hover {
-    color: #2A5FA8;
+    color: #2a5fa8;
     text-decoration: underline;
   }
 
