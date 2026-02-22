@@ -11,29 +11,29 @@ function transformJekyllPaths() {
       // Transform inline text nodes that contain Jekyll syntax
       if (node.type === "text" && node.value) {
         node.value = node.value
-          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/")
-          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/img/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/files/")
           .replace(/\{\{site\.baseurl\}\}/g, "");
       }
       // Transform image URLs
       if (node.type === "image" && node.url) {
         node.url = node.url
-          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/")
-          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/img/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/files/")
           .replace(/\{\{site\.baseurl\}\}/g, "");
       }
       // Transform link URLs
       if (node.type === "link" && node.url) {
         node.url = node.url
-          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/")
-          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/img/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/files/")
           .replace(/\{\{site\.baseurl\}\}/g, "");
       }
       // Transform HTML nodes (for raw HTML images and links)
       if (node.type === "html" && node.value) {
         node.value = node.value
-          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/")
-          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/img\//g, "/assets/img/")
+          .replace(/\{\{site\.baseurl\}\}\/assets\/files\//g, "/assets/files/")
           .replace(/\{\{site\.baseurl\}\}/g, "");
       }
       // Recursively process children
@@ -49,6 +49,7 @@ function transformJekyllPaths() {
 export default defineConfig({
   markdown: {
     remarkPlugins: [transformJekyllPaths],
+    syntaxHighlight: false,
   },
   vite: {
     plugins: [tailwindcss()],

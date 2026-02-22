@@ -75,11 +75,11 @@ export function transformImagePaths(content: string): string {
   // Replace Jekyll baseurl syntax for images and files
   let transformed = content.replace(
     /\{\{site\.baseurl\}\}\/assets\/img\//g,
-    "/assets/",
+    "/assets/img/",
   );
   transformed = transformed.replace(
     /\{\{site\.baseurl\}\}\/assets\/files\//g,
-    "/assets/",
+    "/assets/files/",
   );
   return transformed;
 }
@@ -89,8 +89,8 @@ export function generateExcerpt(
   content: string,
   maxLength: number = 150,
 ): string {
-  // Remove markdown links syntax [text](url) -> text
-  let excerpt = content.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+  // Remove frontmatter if present (lines between --- ---)
+  let excerpt = content.replace(/^---[\s\S]*?---\n/, "");
 
   // Remove markdown image syntax ![alt](url)
   excerpt = excerpt.replace(/!\[[^\]]*\]\([^)]+\)/g, "");
@@ -98,8 +98,21 @@ export function generateExcerpt(
   // Remove HTML tags
   excerpt = excerpt.replace(/<[^>]+>/g, "");
 
-  // Remove frontmatter if present (lines between --- ---)
-  excerpt = excerpt.replace(/^---[\s\S]*?---\n/, "");
+  // Remove Jekyll template syntax
+  excerpt = excerpt.replace(/\{\{[^}]+\}\}[^\s]*/g, "");
+
+  // Remove markdown heading syntax (# Heading -> Heading)
+  excerpt = excerpt.replace(/^#{1,6}\s+/gm, "");
+
+  // Remove markdown list markers (* item, - item, 1. item)
+  excerpt = excerpt.replace(/^[\s]*[-*+]\s+/gm, "");
+  excerpt = excerpt.replace(/^[\s]*\d+\.\s+/gm, "");
+
+  // Remove markdown bold/italic syntax (**text** -> text, *text* -> text)
+  excerpt = excerpt.replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1");
+
+  // Remove markdown links syntax [text](url) -> text
+  excerpt = excerpt.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 
   // Remove extra whitespace and newlines
   excerpt = excerpt.replace(/\s+/g, " ").trim();

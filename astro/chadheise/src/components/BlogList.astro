@@ -1,7 +1,14 @@
 ---
 import { parseAndSortBlogPosts, formatDate } from '../lib/blog';
 
-const posts = await parseAndSortBlogPosts();
+interface Props {
+  limit?: number;
+}
+
+const { limit } = Astro.props as Props;
+const allPosts = await parseAndSortBlogPosts();
+const posts = limit ? allPosts.slice(0, limit) : allPosts;
+const showViewAll = limit !== undefined && allPosts.length > limit;
 ---
 
 <div class="blog-list">
@@ -15,6 +22,9 @@ const posts = await parseAndSortBlogPosts();
     </a>
   ))}
 </div>
+{showViewAll && (
+  <a href="/blog" class="view-all-link">View all blog posts →</a>
+)}
 
 <style>
   .blog-list {
@@ -64,6 +74,20 @@ const posts = await parseAndSortBlogPosts();
     color: #3E3E3E;
     line-height: 1.6;
     margin: 0;
+  }
+
+  .view-all-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #3E8CE6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .view-all-link:hover {
+    color: #2A5FA8;
+    text-decoration: underline;
   }
 
   @media (max-width: 600px) {
