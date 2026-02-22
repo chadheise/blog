@@ -90,3 +90,4 @@ For 1 cutting board approximately 16 in x 21 in:
   <img src="/assets/img/2021-08-01-cutting-boards/IMG_9571.jpg" alt="Cutting board" />
   <img src="/assets/img/2021-08-01-cutting-boards/IMG_9572.jpg" alt="Cutting board" />
 </div>
+<img src="/assets/img/2021-08-01-cutting-boards/65721855514__09715BFB-60E3-4832-BE56-5701E1B618AD.jpg" alt="Cutting board" />
