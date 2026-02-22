@@ -31,23 +31,42 @@ const viewAllLabel =
       const tags = post.frontmatter.tags ?? [];
       return (
         <a href={post.url} class="post-card">
-          <div class="post-image-area">
-            {image && <img src={image} alt={post.title} class="post-image" />}
-          </div>
-          <div class="post-content">
-            <div class="post-header">
-              <h3 class="post-title">{post.title}</h3>
-              {tags.length > 0 && (
-                <div class="post-tags">
-                  {tags.map((tag) => (
-                    <span class="tag">{tag}</span>
-                  ))}
+          {image ? (
+            <div class="post-card-grid">
+              <div class="post-image-area">
+                <img src={image} alt={post.title} class="post-image" />
+              </div>
+              <div class="post-content">
+                <div class="post-header">
+                  <h3 class="post-title">{post.title}</h3>
+                  {tags.length > 0 && (
+                    <div class="post-tags">
+                      {tags.map((tag) => (
+                        <span class="tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
+                <p class="post-date">{formatDate(post.frontmatter.date)}</p>
+                <p class="post-excerpt">{post.excerpt}</p>
+              </div>
             </div>
-            <p class="post-date">{formatDate(post.frontmatter.date)}</p>
-            <p class="post-excerpt">{post.excerpt}</p>
-          </div>
+          ) : (
+            <div class="post-content">
+              <div class="post-header">
+                <h3 class="post-title">{post.title}</h3>
+                {tags.length > 0 && (
+                  <div class="post-tags">
+                    {tags.map((tag) => (
+                      <span class="tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <p class="post-date">{formatDate(post.frontmatter.date)}</p>
+              <p class="post-excerpt">{post.excerpt}</p>
+            </div>
+          )}
         </a>
       );
     })
@@ -70,10 +89,6 @@ const viewAllLabel =
   }
 
   .post-card {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 1rem;
-    align-items: center;
     padding: 1rem;
     border-radius: 8px;
     background-color: #e5ddd4;
@@ -82,11 +97,18 @@ const viewAllLabel =
     transition: background-color 0.2s ease;
   }
 
+  .post-card-grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+  }
+
   .post-card:hover {
     background-color: #ddd5cc;
   }
 
   .post-image-area {
+    align-self: center;
     width: 80px;
     flex-shrink: 0;
     border-radius: 6px;
@@ -101,6 +123,7 @@ const viewAllLabel =
   }
 
   .post-content {
+    align-self: flex-start;
     min-width: 0;
   }
 
