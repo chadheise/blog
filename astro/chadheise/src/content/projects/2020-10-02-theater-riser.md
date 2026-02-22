@@ -1,23 +1,26 @@
 ---
-title:  "Theater Riser"
-date:   2020-10-02
-permalink: "/woodworking/theater-riser"
-category: "woodworking"
+title: Theater Riser
+date: 2020-10-02
+tags: woodworking, movies
+image: /assets/img/woodworking/theater_riser/IMG_7997.jpg
 ---
+
 ![Theater riser](/assets/img/woodworking/theater_riser/IMG_7997.jpg)
 
 ## Supplies
-* 2x8 pine
-* 2x6 treated pine
-* 3/4" plywood
-* Floor adhesive
-* Screws
-* Sound insulation
-* Electrical wire
-* In-floor electrical outlets
+
+- 2x8 pine
+- 2x6 treated pine
+- 3/4" plywood
+- Floor adhesive
+- Screws
+- Sound insulation
+- Electrical wire
+- In-floor electrical outlets
 
 ## Design
-* Design was based on [this similar design](https://rogueengineer.com/diy-theater-riser-construction/) from Rogue Engineer ([video](https://www.youtube.com/watch?v=0CzGENaTBAo))
+
+- Design was based on [this similar design](https://rogueengineer.com/diy-theater-riser-construction/) from Rogue Engineer ([video](https://www.youtube.com/watch?v=0CzGENaTBAo))
 
 ## Pictures
 

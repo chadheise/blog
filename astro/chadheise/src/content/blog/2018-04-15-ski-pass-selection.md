@@ -1,8 +1,9 @@
 ---
-title:  "Ski Pass Selection"
-date:   2018-04-15
-permalink: "/ski-pass-selection"
+title: Ski Pass Selection
+date: 2018-04-15
+tags: skiing/snowboarding
 ---
+
 As a snowboarder and recent skier I enjoy hitting the slopes every year. Unfortunately, lift ticket prices can add up so it is useful to do some planning to get a good deal. There are a few different multi-resort ski packages but it can be difficult to find the right one based on where and how often you plan to ski. I took some of the most popular ski passes and mapped out each of their resorts on a single map so you can easily compare the options.
 
 - [EDGE card](https://www.whistlerblackcomb.com/plan-your-trip/lift-access/edge-cards.aspx) - multi-day passes at [Whistler Blackcomb](https://www.whistlerblackcomb.com/) for Washington State & Candadian residents

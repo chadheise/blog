@@ -1,21 +1,23 @@
 ---
-title:  "Drawer Organizers"
-date:   2020-09-12
-permalink: "/woodworking/drawer_organizers"
-category: "woodworking"
+title: Drawer Organizers
+date: 2020-09-12
+tags: woodworking
+image: /assets/img/woodworking/drawer_organizers/IMG_7867.jpg
 ---
 
 ## Supplies
-* 1/4" mohagany plywood
-* Wood glue
-* Spray Lacquer - Deft Clear Wood Finish, Satin Clear
+
+- 1/4" mohagany plywood
+- Wood glue
+- Spray Lacquer - Deft Clear Wood Finish, Satin Clear
 
 ## Silverware
 
 ![Silverware drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_7867.jpg)
 
 ### Designs
-* [SketchUp](/assets/files/woodworking/silverwareDrawer.skp)
+
+- [SketchUp](/assets/files/woodworking/silverwareDrawer.skp)
 
 ### Pictures
 
@@ -31,7 +33,8 @@ category: "woodworking"
 ![Kitchen utensil drawer organizer](/assets/img/woodworking/drawer_organizers/IMG_8688.jpg)
 
 ### Designs
-* [PDF](/assets/files/woodworking/kitchenDrawer.pdf)
+
+- [PDF](/assets/files/woodworking/kitchenDrawer.pdf)
 
 ## Bathroom Drawer
 

@@ -1,32 +1,36 @@
 ---
-title:  "Cutting Boards"
-date:   2021-08-01
-permalink: "/woodworking/cutting_boards"
-category: "woodworking"
+title: Cutting Boards
+date: 2021-08-01
+tags: woodworking
+image: /assets/img/woodworking/cutting_boards/IMG_9570.jpg
 ---
+
 ![Cutting boards](/assets/img/woodworking/cutting_boards/IMG_9570.jpg)
 
 ## Designs
-* [PDF](/assets/files/woodworking/cuttingBoard.pdf)
-* [Cutting board designer](https://ericu.github.io/CBDJS/cb.html)
+
+- [PDF](/assets/files/woodworking/cuttingBoard.pdf)
+- [Cutting board designer](https://ericu.github.io/CBDJS/cb.html)
 
 ## Supplies
+
 For 1 cutting board approximately 16 in x 21 in:
 
-* (1) Padauk 3/4" x 3" x 24"
-* (2) Cherry 3/4" x 3" x 48"
-* (2) Maple 3/4" x 3" x 48"
-* (1) Walnut 3/4" x 3" x 48"
-* (1) Purpleheart 3/4" x 3" x 48"
+- (1) Padauk 3/4" x 3" x 24"
+- (2) Cherry 3/4" x 3" x 48"
+- (2) Maple 3/4" x 3" x 48"
+- (1) Walnut 3/4" x 3" x 48"
+- (1) Purpleheart 3/4" x 3" x 48"
 
-* [Food Grade Mineral Oil](https://smile.amazon.com/gp/product/B07Q1DSV8B/)
+- [Food Grade Mineral Oil](https://smile.amazon.com/gp/product/B07Q1DSV8B/)
 
 ## Notes
-* When planing with router, plan for at least 1/4" extra thickness as lots will be lost when planing
-* Use very rigid, flat, table as reference with router sled when planing
-* 1/2 cove bit to route juice groove
-* Routed chamfer on all edges
-* Sanded 80, 120, 180
+
+- When planing with router, plan for at least 1/4" extra thickness as lots will be lost when planing
+- Use very rigid, flat, table as reference with router sled when planing
+- 1/2 cove bit to route juice groove
+- Routed chamfer on all edges
+- Sanded 80, 120, 180
 
 ## Pictures
 

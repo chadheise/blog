@@ -1,8 +1,10 @@
 ---
-title:  "Synchronizing MacDive with DiveLog and Dive Computer"
-date:   2015-12-01
-permalink: "/synchronizing-mac-dive"
+title: Synchronizing MacDive with DiveLog and Dive Computer
+date: 2015-12-01
+tags: scuba, technology
+image: /assets/img/butterflyFish.jpg
 ---
+
 <img src="{{site.baseurl}}/assets/img/butterflyFish.jpg" alt="butterflyFish" title="Butterfly Fish" />
 
 # Overview
@@ -21,8 +23,8 @@ In order to get everything logged in the DiveLog app and recording on my dive co
 4. Make any changes/additions to logs in MacDive. This will serve as the "master" source for your log book.
 5. Re-sync with iPhone. Assuming you've followed the steps above, all the latest data will be in MacDive. If this is the case, I find it easier to overwrite the data in DiveLog with data from MacDive.
 6. To get the data on my iPad, I then do one of 2 options:
-    1. Overwrite the iPad data with MacDive data. Do the same thing as was done in step 5 but on the iPad.
-    2. In DiveLog on the iPhone, upload the data to iCloud. Then open DiveLog on the iPad and download the data from iCloud.
+   1. Overwrite the iPad data with MacDive data. Do the same thing as was done in step 5 but on the iPad.
+   2. In DiveLog on the iPhone, upload the data to iCloud. Then open DiveLog on the iPad and download the data from iCloud.
 
 # Troubleshooting
 
@@ -34,19 +36,22 @@ When importing data from my Suunto D4 into MacDive, I sometimes see the followin
 Import Error
  Failed connecting to dive computer on serial port '/dev/tty.usbserial-ST000001' (Error Code: -7)
 ```
+
 To fix it, I check the following:
 
 1. Make sure [FTDI driver](http://www.ftdichip.com/Drivers/VCP.htm) is installed
 2. Check USB devices by opening terminal and running
-    
-    ```
-     system\_profiler SPUSBDataType
-    ```
+
+   ```
+    system\_profiler SPUSBDataType
+   ```
+
 3. Check device id by running this command in terminal
-    
-    ```
-     ls /dev/tty.\*
-    ```
+
+   ```
+    ls /dev/tty.\*
+   ```
+
 4. Make sure dive computer shows "Data Transfer" sometimes it will timeout and go back to "Time" mode. To fix this, unplug and replug the cable to the dive computer.
 
 # Links

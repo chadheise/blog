@@ -1,16 +1,17 @@
 ---
-title:  "Raspberry Pi Plex Media Server"
-date:   2016-12-31
-permalink: "/raspberry-pi-plex-media-server"
+title: Raspberry Pi Plex Media Server
+date: 2016-12-31
+tags: software, movies
 ---
+
 There are many useful posts about how to set up a [Plex](https://www.plex.tv/) Media Server on a [Raspberry Pi](https://www.raspberrypi.org/) but I wanted to share what I found most useful and any "gotchas" I found along the way.
 
 # Hardware
 
-* [Raspberry Pi](http://a.co/29Yo7pn) - There are many different Raspberry Pi kits available and most will work fine.
-* [Keyboard/Mouse](http://a.co/f35fy4N) - It will also work with most USB keyboards and mice but I chose the one I did as it is designed to be used for media servers since it includes the keyboard and trackpad in one device.
-* [USB Drive](http://a.co/fA8DEHD) - You will need to get one big enough to store all of your content. At the quality I ripped, most DVDs ended up being about 2 GB and BluRays about 10 GB so the 2TB drive had enough space to get me started.
-* [DVD/BluRay Drive](http://a.co/hjcWINn) - If you will not be ripping BluRays, I'm sure there are cheaper, DVD only drives available. There are also cheaper BluRay drives but this one seemed to be a good balance of quality and price.
+- [Raspberry Pi](http://a.co/29Yo7pn) - There are many different Raspberry Pi kits available and most will work fine.
+- [Keyboard/Mouse](http://a.co/f35fy4N) - It will also work with most USB keyboards and mice but I chose the one I did as it is designed to be used for media servers since it includes the keyboard and trackpad in one device.
+- [USB Drive](http://a.co/fA8DEHD) - You will need to get one big enough to store all of your content. At the quality I ripped, most DVDs ended up being about 2 GB and BluRays about 10 GB so the 2TB drive had enough space to get me started.
+- [DVD/BluRay Drive](http://a.co/hjcWINn) - If you will not be ripping BluRays, I'm sure there are cheaper, DVD only drives available. There are also cheaper BluRay drives but this one seemed to be a good balance of quality and price.
 
 # Setup
 
@@ -30,21 +31,25 @@ To unmount the external drive:
 cd /mnt
 sudo umount driveName
 ```
+
 To reboot the Raspberry Pi:
 
 ```
 sudo reboot
 ```
+
 To shutdown the Raspberry Pi:
 
 ```
 sudo shutdown
 ```
+
 To start the Plex server:
 
 ```
 sudo /etc/init.d/plexmediaserver start
 ```
+
 # Getting Content
 
 I had numerous DVDs and BluRays that I had purchased that I wanted to make available on my Plex server for convenience. To do this, I ripped them using [Handbrake](https://handbrake.fr/) on my Mac.
@@ -56,6 +61,7 @@ In some cases, after ripping a DVD the content produced was scrambled (it showed
 ```
 brew install libdvdcss
 ```
+
 Then, restart Handbrake (if it was already open) You can also install the libdvdcss library manually by following [these instructions](http://lifehacker.com/5888078/vlc-20-breaks-handbrake-dvd-ripping-heres-how-to-fix-it). For quick reference, here is the [main page for the library](http://www.videolan.org/developers/libdvdcss.html) and a direct link to the [download page](http://download.videolan.org/pub/libdvdcss/) (choose the latest version)
 
 ## Encoded BluRays
@@ -66,9 +72,9 @@ To rip BluRays you need the ability to decode them. Thankfully, there is some us
 
 I frequently referenced these pages to ensure I was naming my video files correctly so that Plex would not have any issues gathering the correct metadata (movie posters, etc)
 
-* [Movie Naming](https://support.plex.tv/articles/naming-and-organizing-your-movie-media-files/)
-* [TV Series Naming](https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/)
-* [IMDB](http://www.imdb.com/) - Useful for looking up information such as the year made about movies and TV shows
+- [Movie Naming](https://support.plex.tv/articles/naming-and-organizing-your-movie-media-files/)
+- [TV Series Naming](https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/)
+- [IMDB](http://www.imdb.com/) - Useful for looking up information such as the year made about movies and TV shows
 
 # Troubleshooting
 
@@ -78,7 +84,7 @@ Many of the videos (esp BluRays) were encoded with H.264 Level 4.1 instead of Le
 
 ## Live TV not working
 
-* See [this guide](https://forums.plex.tv/t/the-guide-is-empty/575117/5)
+- See [this guide](https://forums.plex.tv/t/the-guide-is-empty/575117/5)
 
 ```
 service plexmediaserver stop
