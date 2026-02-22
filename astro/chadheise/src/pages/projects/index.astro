@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ProjectList from '../../components/ProjectList.astro';
+import Nav from '../../components/Nav.astro';
+---
+
+<Layout>
+  <div class="projects-index">
+    <Nav backLink={{ href: '/', label: 'Home' }} />
+    <h1 class="projects-index-title">Projects</h1>
+    <ProjectList />
+  </div>
+</Layout>
+
+<style>
+  .projects-index {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+  }
+
+  .projects-index-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #62664F;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .projects-index {
+      padding: 1.5rem 1rem;
+    }
+
+    .projects-index-title {
+      font-size: 1.5rem;
+    }
+  }
+</style>

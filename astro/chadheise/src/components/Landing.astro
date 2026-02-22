@@ -5,6 +5,7 @@ import geHealthcareLogo from "../assets/geHealthcareLogo.svg";
 import metaLogo from "../assets/metaLogo.svg";
 import paceCalcIcon from "../assets/quickPaceCalcIcon.svg";
 import BlogList from "./BlogList.astro";
+import ProjectList from "./ProjectList.astro";
 import Nav from "./Nav.astro";
 ---
 
@@ -43,6 +44,7 @@ import Nav from "./Nav.astro";
           </p>
         </div>
       </a>
+      <ProjectList limit={3} />
     </section>
 
     <section id="blog" class="section">

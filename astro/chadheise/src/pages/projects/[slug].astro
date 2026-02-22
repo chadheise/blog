@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPostLayout from '../../components/BlogPostLayout.astro';
+import { parseAndSortProjectPosts } from '../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await parseAndSortProjectPosts();
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { slug } = Astro.params;
+const posts = await import.meta.glob<Record<string, any>>(
+  '/src/content/projects/*.md',
+  { eager: true }
+);
+
+let selectedPost = null;
+let Content = null;
+
+for (const [filePath, module] of Object.entries(posts)) {
+  const fileName = filePath.split('/').pop() || '';
+  const fileSlug = fileName
+    .replace(/^\d{4}-\d{2}-\d{2}-/, '')
+    .replace(/\.md$/, '');
+
+  if (fileSlug === slug) {
+    selectedPost = module;
+    Content = module.default;
+    break;
+  }
+}
+
+if (!selectedPost || !Content) {
+  return Astro.redirect('/projects');
+}
+
+const { frontmatter } = selectedPost;
+---
+
+<Layout>
+  <BlogPostLayout title={frontmatter.title} date={frontmatter.date}>
+    <Content />
+  </BlogPostLayout>
+</Layout>

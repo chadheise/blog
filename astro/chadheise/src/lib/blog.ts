@@ -70,6 +70,47 @@ export async function parseAndSortBlogPosts(): Promise<BlogPost[]> {
   return blogPosts;
 }
 
+// Parse and sort project posts by date descending (newest first)
+export async function parseAndSortProjectPosts(): Promise<BlogPost[]> {
+  const mdPosts = await import.meta.glob(
+    "/src/content/projects/*.md",
+    { eager: true }
+  );
+
+  const rawMdPosts = await import.meta.glob(
+    "/src/content/projects/*.md",
+    { as: "raw", eager: true }
+  );
+
+  const posts: BlogPost[] = [];
+
+  for (const [filePath, _module] of Object.entries(mdPosts)) {
+    const module = _module as any;
+    const fileName = filePath.split("/").pop() || "";
+
+    const slug = fileName
+      .replace(/^\d{4}-\d{2}-\d{2}-/, "")
+      .replace(/\.md$/, "");
+
+    const dateObj = new Date(module.frontmatter.date);
+    const rawContent = (rawMdPosts[filePath] as string) || "";
+    const excerpt = generateExcerpt(rawContent);
+
+    posts.push({
+      title: module.frontmatter.title,
+      date: dateObj,
+      slug,
+      url: `/projects/${slug}`,
+      excerpt,
+      frontmatter: module.frontmatter,
+    });
+  }
+
+  posts.sort((a, b) => b.date.getTime() - a.date.getTime());
+
+  return posts;
+}
+
 // Transform Jekyll image paths to Astro paths
 export function transformImagePaths(content: string): string {
   // Replace Jekyll baseurl syntax for images and files
