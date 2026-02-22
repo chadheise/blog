@@ -1,0 +1,199 @@
+---
+import {
+  parseAndSortBlogPosts,
+  parseAndSortProjectPosts,
+  formatDate,
+} from "../lib/post";
+
+interface Props {
+  directory: "blog" | "projects";
+  limit?: number;
+}
+
+const { directory, limit } = Astro.props as Props;
+
+const allPosts =
+  directory === "blog"
+    ? await parseAndSortBlogPosts()
+    : await parseAndSortProjectPosts();
+
+const posts = limit ? allPosts.slice(0, limit) : allPosts;
+const showViewAll = limit !== undefined && allPosts.length > limit;
+const viewAllHref = `/${directory}`;
+const viewAllLabel =
+  directory === "blog" ? "View all blog posts →" : "View all projects →";
+---
+
+<div class="post-list">
+  {
+    posts.map((post) => {
+      const image = post.frontmatter.image;
+      const tags = post.frontmatter.tags ?? [];
+      return (
+        <a href={post.url} class="post-card">
+          <div class="post-image-area">
+            {image && <img src={image} alt={post.title} class="post-image" />}
+          </div>
+          <div class="post-content">
+            <div class="post-header">
+              <h3 class="post-title">{post.title}</h3>
+              {tags.length > 0 && (
+                <div class="post-tags">
+                  {tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+            <p class="post-date">{formatDate(post.frontmatter.date)}</p>
+            <p class="post-excerpt">{post.excerpt}</p>
+          </div>
+        </a>
+      );
+    })
+  }
+</div>
+{
+  showViewAll && (
+    <a href={viewAllHref} class="view-all-link">
+      {viewAllLabel}
+    </a>
+  )
+}
+
+<style>
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .post-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #e5ddd4;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+  }
+
+  .post-card:hover {
+    background-color: #ddd5cc;
+  }
+
+  .post-image-area {
+    width: 80px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .post-content {
+    min-width: 0;
+  }
+
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .post-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #62664f;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    background-color: #62664f;
+    color: #ede8df;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+
+  .post-date {
+    font-size: 0.875rem;
+    color: #5a738f;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .post-excerpt {
+    font-size: 0.95rem;
+    color: #3e3e3e;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .view-all-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #3e8ce6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+
+  .view-all-link:hover {
+    color: #2a5fa8;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .post-list {
+      gap: 0.75rem;
+    }
+
+    .post-card {
+      padding: 0.75rem;
+      grid-template-columns: 60px 1fr;
+    }
+
+    .post-image-area {
+      width: 60px;
+      height: 60px;
+    }
+
+    .post-title {
+      font-size: 1rem;
+    }
+
+    .post-date {
+      font-size: 0.8rem;
+    }
+
+    .post-excerpt {
+      font-size: 0.875rem;
+    }
+  }
+</style>

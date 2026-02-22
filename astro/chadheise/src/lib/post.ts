@@ -8,34 +8,19 @@ export interface BlogPost {
   frontmatter: {
     title: string;
     date: string;
-    permalink: string;
+    permalink?: string;
+    image?: string;
+    tags?: string[];
   };
 }
 
-export interface RawBlogPost {
-  frontmatter: {
-    title: string;
-    date: string;
-    permalink: string;
-  };
-  rawContent: string;
-}
-
-// Parse and sort blog posts by date descending (newest first)
-export async function parseAndSortBlogPosts(): Promise<BlogPost[]> {
-  // Import compiled markdown modules
-  const mdPosts = await import.meta.glob(
-    "/src/content/blog/*.md",
-    { eager: true }
-  );
-
-  // Import raw markdown content for excerpts
-  const rawMdPosts = await import.meta.glob(
-    "/src/content/blog/*.md",
-    { as: "raw", eager: true }
-  );
-
-  const blogPosts: BlogPost[] = [];
+// Shared processing logic for parsed markdown modules
+function processPostModules(
+  mdPosts: Record<string, any>,
+  rawMdPosts: Record<string, any>,
+  urlPrefix: string,
+): BlogPost[] {
+  const posts: BlogPost[] = [];
 
   for (const [filePath, _module] of Object.entries(mdPosts)) {
     const module = _module as any;
@@ -44,51 +29,6 @@ export async function parseAndSortBlogPosts(): Promise<BlogPost[]> {
     // Generate slug by removing date prefix and .md extension
     // 2019-03-15-hanabi-redesign.md -> hanabi-redesign
     const slug = fileName
-      .replace(/^\d{4}-\d{2}-\d{2}-/, "") // Remove date prefix
-      .replace(/\.md$/, ""); // Remove .md extension
-
-    // Parse date from frontmatter
-    const dateObj = new Date(module.frontmatter.date);
-
-    // Get raw content for excerpt
-    const rawContent = (rawMdPosts[filePath] as string) || "";
-    const excerpt = generateExcerpt(rawContent);
-
-    blogPosts.push({
-      title: module.frontmatter.title,
-      date: dateObj,
-      slug,
-      url: `/blog/${slug}`,
-      excerpt,
-      frontmatter: module.frontmatter,
-    });
-  }
-
-  // Sort by date descending (newest first)
-  blogPosts.sort((a, b) => b.date.getTime() - a.date.getTime());
-
-  return blogPosts;
-}
-
-// Parse and sort project posts by date descending (newest first)
-export async function parseAndSortProjectPosts(): Promise<BlogPost[]> {
-  const mdPosts = await import.meta.glob(
-    "/src/content/projects/*.md",
-    { eager: true }
-  );
-
-  const rawMdPosts = await import.meta.glob(
-    "/src/content/projects/*.md",
-    { as: "raw", eager: true }
-  );
-
-  const posts: BlogPost[] = [];
-
-  for (const [filePath, _module] of Object.entries(mdPosts)) {
-    const module = _module as any;
-    const fileName = filePath.split("/").pop() || "";
-
-    const slug = fileName
       .replace(/^\d{4}-\d{2}-\d{2}-/, "")
       .replace(/\.md$/, "");
 
@@ -96,24 +36,61 @@ export async function parseAndSortProjectPosts(): Promise<BlogPost[]> {
     const rawContent = (rawMdPosts[filePath] as string) || "";
     const excerpt = generateExcerpt(rawContent);
 
+    // Normalize tags: frontmatter may be a comma-separated string or an array
+    const rawTags = module.frontmatter.tags;
+    let tags: string[] | undefined;
+    if (typeof rawTags === "string") {
+      tags = rawTags
+        .split(",")
+        .map((t: string) => t.trim())
+        .filter(Boolean);
+    } else if (Array.isArray(rawTags)) {
+      tags = rawTags;
+    }
+
     posts.push({
       title: module.frontmatter.title,
       date: dateObj,
       slug,
-      url: `/projects/${slug}`,
+      url: `/${urlPrefix}/${slug}`,
       excerpt,
-      frontmatter: module.frontmatter,
+      frontmatter: {
+        ...module.frontmatter,
+        tags,
+      },
     });
   }
 
   posts.sort((a, b) => b.date.getTime() - a.date.getTime());
-
   return posts;
+}
+
+// Parse and sort blog posts by date descending (newest first)
+export async function parseAndSortBlogPosts(): Promise<BlogPost[]> {
+  const mdPosts = await import.meta.glob("/src/content/blog/*.md", {
+    eager: true,
+  });
+  const rawMdPosts = await import.meta.glob("/src/content/blog/*.md", {
+    as: "raw",
+    eager: true,
+  });
+  return processPostModules(mdPosts, rawMdPosts, "blog");
+}
+
+// Parse and sort project posts by date descending (newest first)
+export async function parseAndSortProjectPosts(): Promise<BlogPost[]> {
+  const mdPosts = await import.meta.glob("/src/content/projects/*.md", {
+    eager: true,
+  });
+  const rawMdPosts = await import.meta.glob("/src/content/projects/*.md", {
+    as: "raw",
+    eager: true,
+  });
+  return processPostModules(mdPosts, rawMdPosts, "projects");
 }
 
 // Transform Jekyll image paths to Astro paths
 export function transformImagePaths(content: string): string {
-  // Replace Jekyll baseurl syntax for images and files
   let transformed = content.replace(
     /\{\{site\.baseurl\}\}\/assets\/img\//g,
     "/assets/img/",
@@ -160,7 +137,6 @@ export function generateExcerpt(
 
   // Truncate to max length
   if (excerpt.length > maxLength) {
-    // Find the last space before maxLength to avoid cutting words
     const truncated = excerpt.substring(0, maxLength);
     const lastSpaceIndex = truncated.lastIndexOf(" ");
     return truncated.substring(0, lastSpaceIndex) + "...";

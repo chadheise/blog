@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BlogList from '../../components/BlogList.astro';
+import PostList from '../../components/PostList.astro';
 import Nav from '../../components/Nav.astro';
 ---
 
@@ -8,7 +8,7 @@ import Nav from '../../components/Nav.astro';
   <div class="blog-index">
     <Nav backLink={{ href: '/', label: 'Home' }} />
     <h1 class="blog-index-title">Blog</h1>
-    <BlogList />
+    <PostList directory="blog" />
   </div>
 </Layout>
 
