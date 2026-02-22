@@ -38,24 +38,16 @@ const viewAllLabel =
                 <img src={image} alt={post.title} class="post-image" />
               </div>
               <div class="post-content">
-                <div class="post-header">
-                  <h3 class="post-title">{post.title}</h3>
-                  <div class="post-tags">
-                    <TagList tags={tags} />
-                  </div>
-                </div>
+                <h3 class="post-title">{post.title}</h3>
+                <div class="post-tags"><TagList tags={tags} /></div>
                 <p class="post-date">{formatDate(post.frontmatter.date)}</p>
                 <p class="post-excerpt">{post.excerpt}</p>
               </div>
             </div>
           ) : (
             <div class="post-content">
-              <div class="post-header">
-                <h3 class="post-title">{post.title}</h3>
-                <div class="post-tags">
-                  <TagList tags={tags} />
-                </div>
-              </div>
+              <h3 class="post-title">{post.title}</h3>
+              <div class="post-tags"><TagList tags={tags} /></div>
               <p class="post-date">{formatDate(post.frontmatter.date)}</p>
               <p class="post-excerpt">{post.excerpt}</p>
             </div>
@@ -118,32 +110,31 @@ const viewAllLabel =
   .post-content {
     align-self: flex-start;
     min-width: 0;
-  }
-
-  .post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin-bottom: 0.25rem;
+    display: grid;
+    grid-template-areas:
+      "title tags"
+      "date  date"
+      "excerpt excerpt";
+    grid-template-columns: 1fr auto;
+    column-gap: 0.5rem;
   }
 
   .post-title {
+    grid-area: title;
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--color-primary);
-    margin: 0;
-    flex: 1;
+    margin: 0 0 0.25rem 0;
     min-width: 0;
   }
 
   .post-tags {
-    flex-shrink: 0;
-    justify-content: flex-end;
-    align-items: flex-start;
+    grid-area: tags;
+    align-self: start;
   }
 
   .post-date {
+    grid-area: date;
     font-size: 0.875rem;
     color: var(--color-text-muted);
     font-weight: 400;
@@ -151,6 +142,7 @@ const viewAllLabel =
   }
 
   .post-excerpt {
+    grid-area: excerpt;
     font-size: 0.95rem;
     color: var(--color-text-secondary);
     line-height: 1.6;
@@ -178,12 +170,30 @@ const viewAllLabel =
 
     .post-card {
       padding: 0.75rem;
+    }
+
+    .post-card-grid {
       grid-template-columns: 60px 1fr;
+      gap: 0.75rem;
     }
 
     .post-image-area {
       width: 60px;
       height: 60px;
+    }
+
+    .post-content {
+      grid-template-areas:
+        "title"
+        "date"
+        "tags"
+        "excerpt";
+      grid-template-columns: 1fr;
+    }
+
+    .post-tags {
+      margin-top: 0.35rem;
+      margin-bottom: 0.35rem;
     }
 
     .post-title {
