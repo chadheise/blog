@@ -1,8 +1,9 @@
 ---
-title: "Restoring Mac OS from Time Machine Backup"
-date:	2015-11-09
+title: Restoring Mac OS from Time Machine Backup
+date: 2015-11-09
 permalink: "/restoring-mac-from-time-machine-backup"
 ---
+
 # Overview
 
 The following is a series of steps and how-tos I've used for restoring my Mac from a Time Machine backup. Time machine does a good job of making it simple to restore your applications and files but getting all the settings and preferences back to the way they were before can be tricky. Here I highlight how I get things back up and running the way I like. Many of the settings are specific to my setup and preferences but I hope they will be of use to others as well.
@@ -20,24 +21,24 @@ This will make it easier to find things on the backup Time Machine drive
 Note: These instructions are specific to my particular preferred settings
 
 - Set scroll direction
-    1. System Preferences > Trackpad > "Scroll & Zoom" > uncheck "Scroll direction: natural"
+  1. System Preferences > Trackpad > "Scroll & Zoom" > uncheck "Scroll direction: natural"
 - Set finder preferences
-    1. Finder > Preferences...
-    2. Under "General" choose to show all items on desktop
-    3. Under "Sidebar" select user directory to show under Favorites
+  1. Finder > Preferences...
+  2. Under "General" choose to show all items on desktop
+  3. Under "Sidebar" select user directory to show under Favorites
 - Set sorting in all folders
-    1. Right click in a folder, and choose "Show View Options"
-    2. Set "Arrange by:" to "Name"
-    3. Set "Sort by:" to "Name"
-    4. Click the "Use as Defaults" at the bottom
+  1. Right click in a folder, and choose "Show View Options"
+  2. Set "Arrange by:" to "Name"
+  3. Set "Sort by:" to "Name"
+  4. Click the "Use as Defaults" at the bottom
 - Set up hot corners
-    1. System Preferences > Mission Control
-    2. Uncheck "Automatically rearrange Spaces based on most recent use"
-    3. Uncheck "Displays have separate spaces"
-    4. Click "Hot Corners..." button then set top right to be "Mission Control"
+  1. System Preferences > Mission Control
+  2. Uncheck "Automatically rearrange Spaces based on most recent use"
+  3. Uncheck "Displays have separate spaces"
+  4. Click "Hot Corners..." button then set top right to be "Mission Control"
 - Add lock screen to toolbar (this allows you to quickly lock your screen when you step away)
-    1. Go > Utilities > Keychain Access
-    2. In the toolbar menu, Keychain Access > Preferences > check the box "Show keychain status in menu bar"
+  1. Go > Utilities > Keychain Access
+  2. In the toolbar menu, Keychain Access > Preferences > check the box "Show keychain status in menu bar"
 
 # Restore Applications
 
@@ -57,9 +58,9 @@ Restore Firefox profile files (bookmarks, add-ons, plugins, etc) from backup by 
 
 1. Close Firefox
 2. Run the following command from the terminal (adjust backup path as necessary):
-    ```
-    cp -r /Volumes/Backups/Backups.backupdb/406c8f4f3d8a/Latest/Macintosh\\ HD/Users/yourUserName/Library/Application\\ Support/Firefox/Profiles/b9t1x3as.default /Users/yourUserName/Library/Application\\ Support/Firefox/Profiles/
-    ```
+   ```
+   cp -r /Volumes/Backups/Backups.backupdb/406c8f4f3d8a/Latest/Macintosh\\ HD/Users/yourUserName/Library/Application\\ Support/Firefox/Profiles/b9t1x3as.default /Users/yourUserName/Library/Application\\ Support/Firefox/Profiles/
+   ```
 3. For more info see this [link](https://support.mozilla.org/en-US/kb/back-and-restore-information-firefox-profiles#w_restoring-a-profile-backup)
 
 # Restore documents & files
@@ -72,6 +73,7 @@ Restore Firefox profile files (bookmarks, add-ons, plugins, etc) from backup by 
 ## Restore .profile
 
 Copy .profile file from time machine backup (adjust source path based on backup location):
+
 ```
 cp /Volumes/Backups/Backups.backupdb/406c8f4f3d8a/Latest/Macintosh\\ HD/Users/yourUserName/.profile /Users/yourUserName
 ```
@@ -79,6 +81,7 @@ cp /Volumes/Backups/Backups.backupdb/406c8f4f3d8a/Latest/Macintosh\\ HD/Users/yo
 ## Add shortcut for accessing a particular folder
 
 Add the following to your .profile file. to create a command shortcut that works like cd to navigate to a particular, frequently used folder.
+
 ```
 function wp() { cd /Users/your/desired/directory/$1; }
 \_wp() { \_files -W /Users/your/desired/directory/; }
