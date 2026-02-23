@@ -2,10 +2,10 @@
 title: The Crew Box
 date: 2024-09-08
 tags: 3D printing, board games
-image: /assets/img/2024-09-08-the-crew-box/IMG_0271_jpg.jpg
+image: /assets/img/2024-09-08-the-crew-box/IMG_0264_jpg.jpg
 ---
 
-![The Crew Box](/assets/img/2024-09-08-the-crew-box/IMG_0271_jpg.jpg)
+![The Crew Box](/assets/img/2024-09-08-the-crew-box/IMG_0264_jpg.jpg)
 
 <div class="image-grid">
   <img src="/assets/img/2024-09-08-the-crew-box/IMG_0264_jpg.jpg" alt="The Crew Box" />

@@ -119,8 +119,8 @@ export function generateExcerpt(
   // Remove Jekyll template syntax
   excerpt = excerpt.replace(/\{\{[^}]+\}\}[^\s]*/g, "");
 
-  // Remove markdown heading syntax (# Heading -> Heading)
-  excerpt = excerpt.replace(/^#{1,6}\s+/gm, "");
+  // Remove markdown heading lines entirely (# Heading -> removed)
+  excerpt = excerpt.replace(/^#{1,6}\s+.*$/gm, "");
 
   // Remove markdown list markers (* item, - item, 1. item)
   excerpt = excerpt.replace(/^[\s]*[-*+]\s+/gm, "");

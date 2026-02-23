@@ -2,10 +2,10 @@
 title: Picture Frames
 date: 2023-06-25
 tags: woodworking, photography
-image: /assets/img/2023-06-25-picture-frames/IMG_4573.jpg
+image: /assets/img/2023-06-25-picture-frames/IMG_4560.jpg
 ---
 
-![Picture Frames](/assets/img/2023-06-25-picture-frames/IMG_4573.jpg)
+![Picture Frames](/assets/img/2023-06-25-picture-frames/IMG_4560.jpg)
 
 <div class="image-grid">
   <img src="/assets/img/2023-06-25-picture-frames/70752669368__D880E0FF-4967-4493-B523-94676A63A7DF.jpg" alt="Picture Frames" />

@@ -2,7 +2,7 @@
 title: Cutting Board
 date: 2022-07-08
 tags: woodworking
-image: /assets/img/2022-07-08-cutting-board/IMG_1075_jpg.jpg
+image: /assets/img/2022-07-08-cutting-board/IMG_1072.jpg
 ---
 
 ![Cutting Board](/assets/img/2022-07-08-cutting-board/IMG_1075_jpg.jpg)

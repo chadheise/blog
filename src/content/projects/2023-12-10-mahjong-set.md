@@ -2,10 +2,10 @@
 title: Mahjong Set
 date: 2023-12-10
 tags: woodworking, design
-image: /assets/img/2023-12-10-mahjong-set/fc8f42ae-dc0c-4ce8-8118-3c6c3784ff7e.jpg
+image: /assets/img/2023-12-10-mahjong-set/IMG_6411.jpg
 ---
 
-![Mahjong Set](/assets/img/2023-12-10-mahjong-set/fc8f42ae-dc0c-4ce8-8118-3c6c3784ff7e.jpg)
+![Mahjong Set](/assets/img/2023-12-10-mahjong-set/IMG_6411.jpg)
 
 <div class="image-grid">
   <img src="/assets/img/2023-12-10-mahjong-set/1ef396d8-0875-451d-b3f7-6f65a8f2642f.jpg" alt="Mahjong Set" />
