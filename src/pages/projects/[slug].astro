@@ -22,9 +22,7 @@ let Content = null;
 
 for (const [filePath, module] of Object.entries(posts)) {
   const fileName = filePath.split("/").pop() || "";
-  const fileSlug = fileName
-    .replace(/^\d{4}-\d{2}-\d{2}-/, "")
-    .replace(/\.md$/, "");
+  const fileSlug = fileName.replace(/\.md$/, "");
 
   if (fileSlug === slug) {
     selectedPost = module;

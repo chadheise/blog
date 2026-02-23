@@ -2,10 +2,10 @@
 title: Cutting Board
 date: 2022-10-23
 tags: woodworking
-image: /assets/img/2022-10-23-cutting-board/RenderedImage.jpg
+image: /assets/img/2022-10-23-cutting-board/IMG_1774.jpg
 ---
 
-![Cutting Board](/assets/img/2022-10-23-cutting-board/RenderedImage.jpg)
+![Cutting Board](/assets/img/2022-10-23-cutting-board/IMG_1774.jpg)
 
 <div class="image-grid">
   <img src="/assets/img/2022-10-23-cutting-board/IMG_1315.jpg" alt="Cutting Board" />

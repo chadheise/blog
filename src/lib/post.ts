@@ -26,11 +26,10 @@ function processPostModules(
     const module = _module as any;
     const fileName = filePath.split("/").pop() || "";
 
-    // Generate slug by removing date prefix and .md extension
-    // 2019-03-15-hanabi-redesign.md -> hanabi-redesign
-    const slug = fileName
-      .replace(/^\d{4}-\d{2}-\d{2}-/, "")
-      .replace(/\.md$/, "");
+    // Generate slug from full filename (minus .md) to avoid collisions between
+    // posts that share the same base name but have different dates.
+    // 2019-03-15-hanabi-redesign.md -> 2019-03-15-hanabi-redesign
+    const slug = fileName.replace(/\.md$/, "");
 
     const dateObj = new Date(module.frontmatter.date);
     const rawContent = (rawMdPosts[filePath] as string) || "";
@@ -146,8 +145,27 @@ export function generateExcerpt(
 }
 
 // Format date for display
-export function formatDate(dateString: string): string {
-  const date = new Date(dateString);
+export function formatDate(dateInput: string | Date): string {
+  // YAML parsers return bare dates (e.g. "date: 2021-08-01") as UTC Date objects.
+  // Astro may also serialize Date objects to ISO strings ("2021-08-01T00:00:00.000Z")
+  // when passing them as component props. Either way, we extract the calendar
+  // date components directly to avoid timezone-offset shifts.
+  let year: number, month0: number, day: number;
+
+  if (dateInput instanceof Date) {
+    year = dateInput.getUTCFullYear();
+    month0 = dateInput.getUTCMonth(); // 0-indexed
+    day = dateInput.getUTCDate();
+  } else {
+    // substring(0, 10) gives "YYYY-MM-DD" regardless of whether the string is
+    // a simple date ("2021-08-01") or an ISO string ("2021-08-01T00:00:00.000Z")
+    const parts = String(dateInput).substring(0, 10).split("-").map(Number);
+    year = parts[0];
+    month0 = parts[1] - 1; // Convert to 0-indexed
+    day = parts[2];
+  }
+
+  const date = new Date(year, month0, day);
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
