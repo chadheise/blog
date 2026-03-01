@@ -1,7 +1,7 @@
 ---
 title: Mail Organizer
 date: 2022-09-05
-tags: woodworking
+tags: woodworking, featured
 image: /assets/img/2022-09-05-mail-organizer/IMG_1408.jpg
 ---
 

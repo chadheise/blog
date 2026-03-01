@@ -11,6 +11,10 @@
         "label": "coin collecting",
         "emoji": "🪙"
     },
+        {
+        "label": "featured",
+        "emoji": "⭐"
+    },
     {
         "label": "graphic design",
         "emoji": "✏️"

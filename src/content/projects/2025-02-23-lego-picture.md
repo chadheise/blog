@@ -1,7 +1,7 @@
 ---
 title: Lego Picture
 date: 2025-02-23
-tags: software, 3D printing, woodworking, photography
+tags: software, 3D printing, woodworking, photography, featured
 image: /assets/img/2025-02-23-lego-picture/IMG_1519.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Race Medal Display
 date: 2024-05-25
-tags: woodworking, running, 3D printing
+tags: woodworking, running, 3D printing, featured
 image: /assets/img/2024-05-25-race-medal-display/IMG_8652.jpg
 ---
 

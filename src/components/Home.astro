@@ -30,6 +30,9 @@ import Footer from "./Footer.astro";
       <div class="section-header-link">
         <h2><a href={"/projects"}>Projects</a></h2>
       </div>
+      <h3 class="subsection-header">Featured</h3>
+      <PostList directory="projects" filterTag="featured" limit={3} random />
+      <h3 class="subsection-header">Recent</h3>
       <PostList directory="projects" limit={3} />
     </section>
 
@@ -130,6 +133,15 @@ import Footer from "./Footer.astro";
     font-size: 1.75rem;
     margin-bottom: 1rem;
     color: var(--color-accent);
+  }
+
+  .subsection-header {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin: 1.5rem 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .section p {

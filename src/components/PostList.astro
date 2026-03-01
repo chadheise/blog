@@ -9,17 +9,31 @@ import TagList from "./TagList.astro";
 interface Props {
   directory: "blog" | "projects";
   limit?: number;
+  filterTag?: string;
+  random?: boolean;
 }
 
-const { directory, limit } = Astro.props as Props;
+const { directory, limit, filterTag, random } = Astro.props as Props;
 
 const allPosts =
   directory === "blog"
     ? await parseAndSortBlogPosts()
     : await parseAndSortProjectPosts();
 
-const posts = limit ? allPosts.slice(0, limit) : allPosts;
-const showViewAll = limit !== undefined && allPosts.length > limit;
+const filteredPosts = filterTag
+  ? allPosts.filter((p) =>
+      (p.frontmatter.tags ?? []).some(
+        (t) => t.toLowerCase() === filterTag.toLowerCase(),
+      ),
+    )
+  : allPosts;
+
+const sourcePosts = random
+  ? [...filteredPosts].sort(() => Math.random() - 0.5)
+  : filteredPosts;
+
+const posts = limit ? sourcePosts.slice(0, limit) : sourcePosts;
+const showViewAll = !filterTag && limit !== undefined && allPosts.length > limit;
 const viewAllHref = `/${directory}`;
 const viewAllLabel =
   directory === "blog" ? "View all blog posts →" : "View all projects →";

@@ -1,7 +1,7 @@
 ---
 title: Card Game Boxes
 date: 2024-09-09
-tags: 3D printing, board games
+tags: 3D printing, board games, featured
 image: /assets/img/2024-09-09-card-game-boxes/IMG_0305_jpg.jpg
 ---
 

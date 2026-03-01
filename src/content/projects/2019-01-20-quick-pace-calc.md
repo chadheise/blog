@@ -1,7 +1,7 @@
 ---
 title: Quick Pace Calc
 date: 2019-01-20
-tags: software, running
+tags: software, running, featured
 image: assets/img/2019-01-20-quick-pace-calc/pace-calc-icon.png
 ---
 

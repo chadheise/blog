@@ -1,7 +1,7 @@
 ---
 title: Jewelry Box
 date: 2024-05-21
-tags: woodworking
+tags: woodworking, featured
 image: /assets/img/2024-05-21-jewelry-box/IMG_8641.jpg
 ---
 
