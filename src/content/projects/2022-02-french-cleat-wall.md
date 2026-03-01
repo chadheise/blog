@@ -7,6 +7,9 @@ image: /assets/img/2022-02-french-cleat-wall/IMG_0530-2.jpg
 
 ![French Cleat Wall](/assets/img/2022-02-french-cleat-wall/IMG_0530-2.jpg)
 
+- Garage organization using French cleats
+- Custom tool holders
+
 <div class="image-grid">
   <img src="/assets/img/2022-02-french-cleat-wall/IMG_0031.jpg" alt="French Cleat Wall" />
   <img src="/assets/img/2022-02-french-cleat-wall/IMG_0032.jpg" alt="French Cleat Wall" />

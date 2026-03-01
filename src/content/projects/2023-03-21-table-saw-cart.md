@@ -7,6 +7,11 @@ image: /assets/img/2023-03-21-table-saw-cart/IMG_2514.jpg
 
 ![Table Saw Cart](/assets/img/2023-03-21-table-saw-cart/IMG_2514.jpg)
 
+- Cart for DeWalt table saw
+- Storage drawers for jigs & parts
+- Large shelf for cross cut sled
+- Collapsable, extension out-feed table
+
 <div class="image-grid">
   <img src="/assets/img/2023-03-21-table-saw-cart/IMG_2452.jpg" alt="Table Saw Cart" />
   <img src="/assets/img/2023-03-21-table-saw-cart/IMG_2453.jpg" alt="Table Saw Cart" />

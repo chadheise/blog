@@ -7,6 +7,9 @@ image: /assets/img/2023-02-25-eBike-battery-drawer/IMG_2414_jpg.jpg
 
 ![Ebike Battery Drawer](/assets/img/2023-02-25-eBike-battery-drawer/IMG_2414_jpg.jpg)
 
+- Drawer for storing eBike batteries
+- Hangs on French cleat wall
+
 <div class="image-grid">
   <img src="/assets/img/2023-02-25-eBike-battery-drawer/IMG_2396.jpg" alt="Ebike Battery Drawer" />
   <img src="/assets/img/2023-02-25-eBike-battery-drawer/IMG_2397.jpg" alt="Ebike Battery Drawer" />

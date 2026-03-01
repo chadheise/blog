@@ -7,6 +7,8 @@ image: /assets/img/2022-06-28-plano-box-shelf/IMG_0883.jpg
 
 ![Plano Box Shelf](/assets/img/2022-06-28-plano-box-shelf/IMG_0883.jpg)
 
+- French cleat mounted shelves for Plano storage boxes
+
 <div class="image-grid">
   <img src="/assets/img/2022-06-28-plano-box-shelf/IMG_0861.jpg" alt="Plano Box Shelf" />
   <img src="/assets/img/2022-06-28-plano-box-shelf/IMG_0862.jpg" alt="Plano Box Shelf" />

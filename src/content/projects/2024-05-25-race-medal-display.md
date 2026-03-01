@@ -7,6 +7,10 @@ image: /assets/img/2024-05-25-race-medal-display/IMG_8652.jpg
 
 ![Race Medal Display](/assets/img/2024-05-25-race-medal-display/IMG_8652.jpg)
 
+- Wall mounted, flexible display for race medals
+- Center piece allows for displaying race bibs with interlocking tiles for displaying finisher medals
+- Modeled with 3D printed parts, then custom cut wooden pieces with CNC
+
 <div class="image-grid">
   <img src="/assets/img/2024-05-25-race-medal-display/6ECA4390-1C88-4ED7-ADBE-ED90322E4D9F.jpg" alt="Race Medal Display" />
   <img src="/assets/img/2024-05-25-race-medal-display/IMG_2981.jpg" alt="Race Medal Display" />

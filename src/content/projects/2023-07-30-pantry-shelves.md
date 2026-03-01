@@ -7,6 +7,10 @@ image: /assets/img/2023-07-30-pantry-shelves/IMG_4885.jpg
 
 ![Pantry Shelves](/assets/img/2023-07-30-pantry-shelves/IMG_4885.jpg)
 
+- Adjustable pantry shelves with French cleats
+- Made from hickory
+- Finished with Rubio Monocaot
+
 <div class="image-grid">
   <img src="/assets/img/2023-07-30-pantry-shelves/4D9433B3-64B9-4A32-A215-445473D1DA8B.jpg" alt="Pantry Shelves" />
   <img src="/assets/img/2023-07-30-pantry-shelves/IMG_4452.jpg" alt="Pantry Shelves" />

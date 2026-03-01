@@ -7,6 +7,9 @@ image: /assets/img/2023-12-10-mahjong-set/IMG_6411.jpg
 
 ![Mahjong Set](/assets/img/2023-12-10-mahjong-set/IMG_6411.jpg)
 
+- Handmade wooden Mahjong tiles & box
+- CNC cut icons filled with colored epoxy
+
 <div class="image-grid">
   <img src="/assets/img/2023-12-10-mahjong-set/1ef396d8-0875-451d-b3f7-6f65a8f2642f.jpg" alt="Mahjong Set" />
   <img src="/assets/img/2023-12-10-mahjong-set/9C592746-3400-4839-B9A8-E50E5295467D.jpg" alt="Mahjong Set" />

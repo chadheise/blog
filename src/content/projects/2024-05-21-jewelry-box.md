@@ -7,6 +7,10 @@ image: /assets/img/2024-05-21-jewelry-box/IMG_8641.jpg
 
 ![Jewelry Box](/assets/img/2024-05-21-jewelry-box/IMG_8641.jpg)
 
+- Wooden jewlery box
+- Made with padauk, walnut, cherry and maple
+- Lined with black suede
+
 <div class="image-grid">
   <img src="/assets/img/2024-05-21-jewelry-box/IMG_0278.jpg" alt="Jewelry Box" />
   <img src="/assets/img/2024-05-21-jewelry-box/IMG_0279.jpg" alt="Jewelry Box" />

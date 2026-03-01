@@ -7,6 +7,9 @@ image: /assets/img/2022-08-06-lumber-rack/IMG_1094.jpg
 
 ![Lumber Rack](/assets/img/2022-08-06-lumber-rack/IMG_1094.jpg)
 
+- French cleat brackets for storing lumber
+- Made from standard 2x4s
+
 <div class="image-grid">
   <img src="/assets/img/2022-08-06-lumber-rack/IMG_1079.jpg" alt="Lumber Rack" />
   <img src="/assets/img/2022-08-06-lumber-rack/IMG_1091.jpg" alt="Lumber Rack" />

@@ -7,6 +7,9 @@ image: /assets/img/2022-09-05-mail-organizer/IMG_1408.jpg
 
 ![Mail Organizer](/assets/img/2022-09-05-mail-organizer/IMG_1408.jpg)
 
+- Mail organizer
+- Fits 3 different sizes of letters
+
 <div class="image-grid">
   <img src="/assets/img/2022-09-05-mail-organizer/IMG_1354.jpg" alt="Mail Organizer" />
   <img src="/assets/img/2022-09-05-mail-organizer/IMG_1355.jpg" alt="Mail Organizer" />

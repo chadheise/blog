@@ -7,6 +7,10 @@ image: /assets/img/2025-01-25-metaversary-pin-block/IMG_1378.jpg
 
 ![Metaversary Pin Block](/assets/img/2025-01-25-metaversary-pin-block/IMG_1378.jpg)
 
+- Handmade, reproduction display blocks for pins recognizing tenure at Meta
+- Made from solid cherry wood
+- Laser engraved
+
 <div class="image-grid">
   <img src="/assets/img/2025-01-25-metaversary-pin-block/IMG_1099.jpg" alt="Metaversary Pin Block" />
   <img src="/assets/img/2025-01-25-metaversary-pin-block/IMG_1101.jpg" alt="Metaversary Pin Block" />

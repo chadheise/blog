@@ -7,6 +7,8 @@ image: /assets/img/2022-10-05-wall-outlets/IMG_1583.jpg
 
 ![Wall Outlets](/assets/img/2022-10-05-wall-outlets/IMG_1583.jpg)
 
+- Outlet extensions for buffet bar inside cherry boxes
+
 <div class="image-grid">
   <img src="/assets/img/2022-10-05-wall-outlets/IMG_1560.jpg" alt="Wall Outlets" />
   <img src="/assets/img/2022-10-05-wall-outlets/IMG_1561.jpg" alt="Wall Outlets" />

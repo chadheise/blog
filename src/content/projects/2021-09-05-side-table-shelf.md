@@ -7,6 +7,8 @@ image: /assets/img/2021-09-05-side-table-shelf/IMG_9687.jpg
 
 ![Side Table Shelf](/assets/img/2021-09-05-side-table-shelf/IMG_9687.jpg)
 
+- Simple shelf insert for existing side tables
+
 <div class="image-grid">
   <img src="/assets/img/2021-09-05-side-table-shelf/IMG_9681_jpg.jpg" alt="Side Table Shelf" />
   <img src="/assets/img/2021-09-05-side-table-shelf/IMG_9682_jpg.jpg" alt="Side Table Shelf" />

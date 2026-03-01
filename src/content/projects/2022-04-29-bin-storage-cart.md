@@ -7,6 +7,8 @@ image: /assets/img/2022-04-29-bin-storage-cart/IMG_0528-2.jpg
 
 ![Bin Storage Cart](/assets/img/2022-04-29-bin-storage-cart/IMG_0528-2.jpg)
 
+- Storage cart for large plastic storage bins
+
 <div class="image-grid">
   <img src="/assets/img/2022-04-29-bin-storage-cart/IMG_0513-2.jpg" alt="Bin Storage Cart" />
   <img src="/assets/img/2022-04-29-bin-storage-cart/IMG_0514-2.jpg" alt="Bin Storage Cart" />

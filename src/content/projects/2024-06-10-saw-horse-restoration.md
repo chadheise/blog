@@ -7,6 +7,8 @@ image: /assets/img/2024-06-10-saw-horse-restoration/IMG_8685_jpg.jpg
 
 ![Saw Horse Restoration](/assets/img/2024-06-10-saw-horse-restoration/IMG_8685_jpg.jpg)
 
+- Restored old, rusted saw horses by sanding and repainting and replacing hardware
+
 <div class="image-grid">
   <img src="/assets/img/2024-06-10-saw-horse-restoration/IMG_8673.jpg" alt="Saw Horse Restoration" />
   <img src="/assets/img/2024-06-10-saw-horse-restoration/IMG_8674_jpg.jpg" alt="Saw Horse Restoration" />

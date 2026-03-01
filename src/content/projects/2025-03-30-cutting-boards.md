@@ -7,6 +7,17 @@ image: /assets/img/2025-03-30-cutting-boards/IMG_2106.jpg
 
 ![Cutting Boards](/assets/img/2025-03-30-cutting-boards/IMG_2106.jpg)
 
+- Plaid pattern cutting board
+- Large block cherry cutting board
+- Custom mixed cutting board conditioning oil
+
+## Notes
+
+- [Food Grade Mineral Oil](https://www.amazon.com/dp/B07Q1DSV8B)
+- [Bees Wax](https://www.amazon.com/dp/B00FD32S0Y)
+- [Aluminum storage cans](https://www.amazon.com/dp/B08PSQV7YW)
+- Before putting oil in cans, seal the bottom with pure, melted beeswax to prevent the oil from seeping out the pores of the can
+
 <div class="image-grid">
   <img src="/assets/img/2025-03-30-cutting-boards/IMG_1882_jpg.jpg" alt="Cutting Boards" />
   <img src="/assets/img/2025-03-30-cutting-boards/IMG_1883.jpg" alt="Cutting Boards" />
