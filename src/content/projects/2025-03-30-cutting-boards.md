@@ -1,7 +1,7 @@
 ---
 title: Cutting Boards
 date: 2025-03-30
-tags: woodworking, design
+tags: woodworking, graphic design
 image: /assets/img/2025-03-30-cutting-boards/IMG_2106.jpg
 ---
 

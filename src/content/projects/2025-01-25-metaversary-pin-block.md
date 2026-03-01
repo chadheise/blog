@@ -1,7 +1,7 @@
 ---
 title: Metaversary Pin Block
 date: 2025-01-25
-tags: woodworking, 3D printing, design
+tags: woodworking, 3D printing, graphic design
 image: /assets/img/2025-01-25-metaversary-pin-block/IMG_1378.jpg
 ---
 

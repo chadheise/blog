@@ -1,7 +1,7 @@
 ---
 title: Mahjong Set
 date: 2023-12-10
-tags: woodworking, design
+tags: woodworking, graphic design
 image: /assets/img/2023-12-10-mahjong-set/IMG_6411.jpg
 ---
 

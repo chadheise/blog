@@ -1,7 +1,7 @@
 ---
 title: Hanabi Redesign
 date: 2019-03-15
-tags: design, board games
+tags: graphic design, board games
 image: /assets/img/2019-03-15-hanabi-redesign/hanabiTitle.jpg
 ---
 

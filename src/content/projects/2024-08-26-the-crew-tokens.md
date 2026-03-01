@@ -1,7 +1,7 @@
 ---
 title: The Crew Tokens
 date: 2024-08-26
-tags: 3D printing, board games, design
+tags: 3D printing, board games, graphic design
 image: /assets/img/2024-08-26-the-crew-tokens/IMG_0157.jpg
 ---
 
