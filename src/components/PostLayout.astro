@@ -142,8 +142,16 @@ const { title, date, tags, backLink } = Astro.props as Props;
     display: block;
   }
 
-  .post-content :global(ul),
+  .post-content :global(ul) {
+    list-style-type: disc;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+
   .post-content :global(ol) {
+    list-style-type: decimal;
     color: var(--color-text-secondary);
     line-height: 1.8;
     margin-bottom: 1rem;
