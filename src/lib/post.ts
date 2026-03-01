@@ -33,7 +33,7 @@ function processPostModules(
 
     const dateObj = new Date(module.frontmatter.date);
     const rawContent = (rawMdPosts[filePath] as string) || "";
-    const excerpt = generateExcerpt(rawContent);
+    const excerpt = generateExcerptHtml(rawContent);
 
     // Normalize tags: frontmatter may be a comma-separated string or an array
     const rawTags = module.frontmatter.tags;
@@ -99,6 +99,50 @@ export function transformImagePaths(content: string): string {
     "/assets/files/",
   );
   return transformed;
+}
+
+// Generate an HTML excerpt from raw markdown content.
+// For posts that start with bullet list items, renders them as <ul><li> HTML.
+// Links within bullets become <span class="excerpt-link"> rather than real <a>
+// tags, since the preview card itself is already an anchor element.
+// Falls back to plain text for non-list posts.
+export function generateExcerptHtml(
+  content: string,
+  maxItems: number = 3,
+  maxLength: number = 150,
+): string {
+  let body = content.replace(/^---[\s\S]*?---\n/, "");
+  body = body.replace(/!\[[^\]]*\]\([^)]+\)/g, "");
+  body = body.replace(/<[^>]+>/g, "");
+  body = body.replace(/\{\{[^}]+\}\}[^\s]*/g, "");
+  body = body.replace(/^#{1,6}\s+.*$/gm, "");
+
+  const bulletLines: string[] = [];
+  for (const line of body.split("\n")) {
+    const trimmed = line.trim();
+    if (/^[-*+]\s/.test(trimmed)) {
+      bulletLines.push(trimmed);
+    } else if (trimmed === "") {
+      continue;
+    } else {
+      break;
+    }
+  }
+
+  if (bulletLines.length > 0) {
+    const items = bulletLines.slice(0, maxItems).map((line) => {
+      let text = line.replace(/^[-*+]\s+/, "");
+      text = text.replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1");
+      text = text.replace(
+        /\[([^\]]+)\]\([^)]+\)/g,
+        '<span class="excerpt-link">$1</span>',
+      );
+      return `<li>${text}</li>`;
+    });
+    return `<ul class="excerpt-list">${items.join("")}</ul>`;
+  }
+
+  return generateExcerpt(content, maxLength);
 }
 
 // Generate excerpt from raw markdown content

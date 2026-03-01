@@ -41,7 +41,7 @@ const viewAllLabel =
                 <h3 class="post-title">{post.title}</h3>
                 <div class="post-tags"><TagList tags={tags} /></div>
                 <p class="post-date">{formatDate(post.frontmatter.date)}</p>
-                <p class="post-excerpt">{post.excerpt}</p>
+                <div class="post-excerpt" set:html={post.excerpt} />
               </div>
             </div>
           ) : (
@@ -49,7 +49,7 @@ const viewAllLabel =
               <h3 class="post-title">{post.title}</h3>
               <div class="post-tags"><TagList tags={tags} /></div>
               <p class="post-date">{formatDate(post.frontmatter.date)}</p>
-              <p class="post-excerpt">{post.excerpt}</p>
+              <div class="post-excerpt" set:html={post.excerpt} />
             </div>
           )}
         </a>
@@ -148,6 +148,20 @@ const viewAllLabel =
     color: var(--color-text-secondary);
     line-height: 1.6;
     margin: 0;
+  }
+
+  .post-excerpt :global(.excerpt-list) {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .post-excerpt :global(.excerpt-list li) {
+    margin-bottom: 0.15rem;
+  }
+
+  .post-excerpt :global(.excerpt-link) {
+    color: var(--color-link);
   }
 
   .view-all-link {

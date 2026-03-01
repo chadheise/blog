@@ -7,6 +7,10 @@ image: /assets/img/2024-08-19-eBike-light/IMG_2824.jpg
 
 ![Ebike Light](/assets/img/2024-08-19-eBike-light/IMG_2824.jpg)
 
+- Custom designed and 3D printed bracket for mounting [headlight](https://www.amazon.com/dp/B0BVJNFL7J) to my eBike
+- View source files on [Thingiverse](https://www.thingiverse.com/thing:6735784)
+- Later made stronger version from aluminum
+
 <div class="image-grid">
   <img src="/assets/img/2024-08-19-eBike-light/IMG_0004.jpg" alt="Ebike Light" />
   <img src="/assets/img/2024-08-19-eBike-light/IMG_0005.jpg" alt="Ebike Light" />

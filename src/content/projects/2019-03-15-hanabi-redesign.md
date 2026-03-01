@@ -7,7 +7,7 @@ image: /assets/img/2019-03-15-hanabi-redesign/hanabiTitle.jpg
 
 ![Hanabi title card](/assets/img/2019-03-15-hanabi-redesign/hanabiTitle.jpg)
 
-One of my favorite games is [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi). It is a game of logic and deduction and has a cool firework theme (Hanabi is Japanese for "firework"). If you haven't played it, I highly recommend you try it out. You can purchase it on [Amazon here](https://www.amazon.com/dp/B00CYQ9Q76). Given I play the game quite frequently, I wanted to see if I could make a better deck of cards to play with.
+One of my favorite games is [Hanabi](https://boardgamegeek.com/boardgame/98778/hanabi). It is a game of logic and deduction and has a cool firework theme (Hanabi is Japanese for "firework"). If you haven't played it, I highly recommend you try it out. You can purchase it on [Amazon here](https://www.amazon.com/dp/B00CYQ9Q76). Given I play the game quite frequently, I wanted to see if I could make a better deck of cards to play with. I also designed a [storage box](/projects/2024-09-09-card-game-boxes) for the cards.
 
 # Goals
 

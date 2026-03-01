@@ -7,6 +7,18 @@ image: /assets/img/2024-09-09-card-game-boxes/IMG_0305_jpg.jpg
 
 ![Card Game Boxes](/assets/img/2024-09-09-card-game-boxes/IMG_0298_jpg.jpg)
 
+- Storage boxes for numerous card games
+- View source files on Thingiverse:
+  - [Hanabi](https://www.thingiverse.com/thing:6759907) (Goes with my [custom Hanabi cards](/projects/2019-03-15-hanabi-redesign) and these simple [Hanabi tokens](https://www.thingiverse.com/thing:6759892))
+  - [Krypto](https://www.thingiverse.com/thing:6761355)
+  - [Playing Cards](https://www.thingiverse.com/thing:6761366)
+  - [Five Crowns](https://www.thingiverse.com/thing:6762339)
+  - [Monopoly Deal](https://www.thingiverse.com/thing:6762342)
+  - [Set](https://www.thingiverse.com/thing:6762344)
+  - [Skip-Bo](https://www.thingiverse.com/thing:6766501)
+  - [Tichu](https://www.thingiverse.com/thing:6767006)
+  - [Quiddler](https://www.thingiverse.com/thing:6896892)
+
 <div class="image-grid">
   <img src="/assets/img/2024-09-09-card-game-boxes/IMG_0256_jpg.jpg" alt="Card Game Boxes" />
   <img src="/assets/img/2024-09-09-card-game-boxes/IMG_0258_jpg.jpg" alt="Card Game Boxes" />
