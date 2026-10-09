@@ -70,7 +70,8 @@ export async function parseAndSortBlogPosts(): Promise<BlogPost[]> {
     eager: true,
   });
   const rawMdPosts = await import.meta.glob("/src/content/blog/*.md", {
-    as: "raw",
+    query: "?raw",
+    import: "default",
     eager: true,
   });
   return processPostModules(mdPosts, rawMdPosts, "blog");
@@ -82,7 +83,8 @@ export async function parseAndSortProjectPosts(): Promise<BlogPost[]> {
     eager: true,
   });
   const rawMdPosts = await import.meta.glob("/src/content/projects/*.md", {
-    as: "raw",
+    query: "?raw",
+    import: "default",
     eager: true,
   });
   return processPostModules(mdPosts, rawMdPosts, "projects");
